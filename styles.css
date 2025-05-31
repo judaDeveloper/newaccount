@@ -97,6 +97,7 @@ body {
   padding: 5px;
   display: grid;
   position: relative;
+  background-color: red;
 }
 .forms {
   width: 100%;
