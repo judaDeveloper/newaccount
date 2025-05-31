@@ -79,6 +79,8 @@ body {
   margin: 0 auto;
   max-width: 1420px;
   position: relative;
+  background-color: #ff80ed;
+  padding: 5px;
 }
 .modal {
   width: 100%;
