@@ -227,7 +227,7 @@ table.client {
   transition: all 0.3s ease;
 }
 .pod {
-  font-size: 18px;
+  font-size: 14px;
   color: #5c5c5c;
   position: absolute;
   pointer-events: none;
@@ -237,7 +237,7 @@ table.client {
 }
 .txt .pod, 
 .drod .pod {
-  top: 13px;
+  top: 15px;
   left: 8%;
 }
 .txtb .pod {
