@@ -106,7 +106,7 @@ body {
   max-width: 560px;
   min-width: 300px;
   border-radius: 3px;
-  height: 100%;
+  /*height: 100%;*/
   background-size: cover;
   background-repeat: no-repeat;
   grid-template-rows: 50px minmax(500px, 1fr);
