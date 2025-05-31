@@ -767,7 +767,7 @@ function open_forms(fm) {
       current_form = forms[i];
       current_form.classList.add("shown");
       current_form.reset();
-      netxt_tab(1);
+      netxt_tab(0);
     } else {
       forms[i].classList.remove("shown");
     }
