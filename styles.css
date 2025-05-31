@@ -69,7 +69,7 @@ body {
   display: grid;
   height: 100%;
   overflow: hhidden;
-  background-color: #ffffff;
+  background-color: #ffd700;
   grid-template-columns: 1fr;
   padding: 5px;
 }
