@@ -61,10 +61,9 @@
 
 body {
   height: 100%;
-  display: block;
+  display: grid;
   overflow: hhidden;
   background-color: #ffd700;
-  grid-template-columns: 1fr;
 }
 .modal {
   width: 100%;
