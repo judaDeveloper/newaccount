@@ -58,12 +58,6 @@
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-/*
-  Smooth scroll
-*/
-:root {
-  scroll-behavior: smooth;
-}
 
 body {
   display: grid;
