@@ -60,12 +60,11 @@
 }
 
 body {
-  display: grid;
   height: 100%;
+  display: block;
   overflow: hhidden;
   background-color: #ffd700;
   grid-template-columns: 1fr;
-  padding: 5px;
 }
 #Main {
   width: 100%;
@@ -73,7 +72,6 @@ body {
   display: grid;
   margin: 0 auto;
   max-width: 1420px;
-  position: relative;
   background-color: #ff80ed;
   padding: 5px;
 }
