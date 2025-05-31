@@ -1,42 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  border: none;
-  font-size: 13px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-/*
-  Smooth scroll
-*/
-:root {
-  scroll-behavior: smooth;
-}
-
-body {
-  display: grid;
-  height: 100%;
-  overflow: hhidden;
-  background-color: #ffffff;
-  grid-template-columns: 1fr;
-}
-#Main {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  margin: 0 auto;
-  max-width: 1420px;
-  position: relative;
-  padding: 5px;
-}
-
-
 @-moz-keyframes growdown {
   0% {
     transform: scaleY(0);
@@ -82,6 +43,43 @@ body {
   }
 }
 
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  font-size: 13px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+/*
+  Smooth scroll
+*/
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  height: 100%;
+  overflow: hhidden;
+  background-color: #ffffff;
+  grid-template-columns: 1fr;
+}
+#Main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  margin: 0 auto;
+  max-width: 1420px;
+  position: relative;
+}
 .modal {
   width: 100%;
   height: 100%;
@@ -89,7 +87,6 @@ body {
   padding: 5px;
   display: grid;
   min-width: 300px;
-  position: absolute;
   grid-template-rows: 1fr;
   background-color: #008000;
 }
