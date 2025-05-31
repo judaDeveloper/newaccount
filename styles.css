@@ -91,6 +91,8 @@ body {
   min-width: 300px;
   position: absolute;
   grid-template-rows: 1fr;
+  background-color: #00800;
+}
 }
 .md {
   width: 100%;
