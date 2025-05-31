@@ -228,7 +228,7 @@ table.client {
   transition: all 0.3s ease;
 }
 .pod {
-  font-size: 14px;
+  font-size: 18px;
   color: #5c5c5c;
   position: absolute;
   pointer-events: none;
