@@ -21,7 +21,7 @@
 
 body {
   display: grid;
-  height: 100vh;
+  height: 100%;
   overflow: hhidden;
   background-color: #ffffff;
   grid-template-columns: 1fr;
@@ -97,7 +97,7 @@ body {
   padding: 5px;
   display: grid;
   position: relative;
-  background-color: red;
+  background-color: #ff0000;
 }
 .forms {
   width: 100%;
@@ -305,7 +305,7 @@ table.client {
   min-height: 40px;
   border-radius: 100%;
   background-color: #24a8ff;
-  content: url("https://judadeveloper.github.io/registration/user2.svg");
+  content: url("https://judadeveloper.github.io/newaccount/photo.svg");
 }
 .imge .nput {
   width: 0;
