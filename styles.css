@@ -66,34 +66,18 @@ body {
   background-color: #ffd700;
   grid-template-columns: 1fr;
 }
-#Main {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  margin: 0 auto;
-  max-width: 1420px;
-  background-color: #ff80ed;
-  padding: 5px;
-}
 .modal {
   width: 100%;
   height: 100%;
   z-index: 999;
   padding: 5px;
   display: grid;
+  max-width: 1420px;
   min-width: 300px;
   grid-template-rows: 1fr;
   background-color: #008000;
 }
-}
-.md {
-  width: 100%;
-  height: 100%;
-  padding: 5px;
-  display: grid;
-  position: relative;
-  background-color: #ff0000;
-}
+
 .forms {
   width: 100%;
   display: grid;
