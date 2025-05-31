@@ -73,7 +73,6 @@ body {
   display: grid;
   max-width: 1420px;
   min-width: 300px;
-  grid-template-rows: 1fr;
   background-color: #008000;
 }
 
