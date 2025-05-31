@@ -38,8 +38,6 @@ firebase.firestore().enablePersistence()
     }
 });
 
-
-
 var appdata = { 
     users: [], 
     loans: [],
@@ -769,7 +767,7 @@ function open_forms(fm) {
       current_form = forms[i];
       current_form.classList.add("shown");
       current_form.reset();
-      netxt_tab(5);
+      netxt_tab(1);
     } else {
       forms[i].classList.remove("shown");
     }
@@ -801,7 +799,6 @@ function addDays(date, days) {
   newDate.setDate(date.getDate() + days);
   return newDate;
 }
-
 
 open_forms('newclient');
 
