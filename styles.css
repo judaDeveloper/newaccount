@@ -67,7 +67,7 @@
 
 body {
   display: grid;
-  /*height: 100%;*/
+  height: 100%;
   overflow: hhidden;
   background-color: #ffffff;
   grid-template-columns: 1fr;
