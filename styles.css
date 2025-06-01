@@ -61,7 +61,7 @@
 body {
   display: grid;
   background-color: #37eb34;
-  /*grid-template-columns: 1fr;*/
+  grid-template-rows: 1fr;
   padding: 5px;
 }
 #Main {
@@ -71,6 +71,7 @@ body {
   padding: 5px;
   /*max-width: 1420px;*/
   background-color: #eb2182;
+grid-template-rows: 1fr;
 }
 
 .modal {
