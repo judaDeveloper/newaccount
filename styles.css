@@ -67,11 +67,8 @@ body {
   width: 100%;
   height: 100%;
   display: grid;
-  background-color: #37eb34;
   grid-template-rows: 1fr;
-  padding: 5px;
 }
-
 
 #Main {
   width: 100%;
@@ -92,7 +89,7 @@ body {
 .md {
   width: 100%;
   height: 100%;
-  padding: 5px;
+  padding: 10px;
   display: grid;
   position: relative;
   background-color: #c1e3ff;
