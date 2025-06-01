@@ -83,6 +83,7 @@ body {
 }
 .md {
   width: 100%;
+  height: 100%;
   padding: 5px;
   display: grid;
   position: relative;
@@ -95,12 +96,11 @@ body {
   max-width: 560px;
   min-width: 300px;
   border-radius: 3px;
-  height: fit-content;
   background-size: cover;
   background-repeat: no-repeat;
   grid-template-rows: 50px minmax(500px, 1fr);
   background-color: #c1e3ff;
-  background-image: url("https://judadeveloper.github.io/newaccount/banner-2.png");
+  background-image: url("https://judadeveloper.github.io/newaccount/banner.png");
   box-shadow: #00000059 0px 5px 15px;
   display: ynone;
 }
