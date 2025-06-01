@@ -75,13 +75,12 @@ body {
 
 .modal {
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
   z-index: 999;
   display: grid;
   min-width: 300px;
   grid-template-rows: 1fr;
-  display: rnone;
-  height: calc(100% - 10px);
+  display: rnone; 
 }
 .md {
   width: 100%;
@@ -90,7 +89,9 @@ body {
   display: grid;
   position: relative;
   background-color: #c1e3ff;
+  grid-template-rows: 1fr;
 }
+
 .forms {
   width: 100%;
   height: 100%;
