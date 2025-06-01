@@ -93,6 +93,7 @@ body {
   display: grid;
   position: relative;
   background-color: #c1e3ff;
+  background-color: #7697b3;
   grid-template-rows: 1fr;
 }
 
