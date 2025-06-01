@@ -585,7 +585,6 @@ input.invalid[type=button] {
 .successfull p:first-of-type {
   font-size: 20px;
   font-weight: 500;
-}
 .modal.saved .successfull {
   display: grid;
 }
