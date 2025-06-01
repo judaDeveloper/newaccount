@@ -64,17 +64,8 @@ body {
   display: grid;
   overflow: hhidden;
   background-color: #ffd700;
+  grid-template-row: 100%;
 }
-/*.modal {
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-  padding: 5px;
-  display: grid;
-  max-width: 1420px;
-  min-width: 300px;
-  background-color: #008000;
-}*/
 
 .forms {
   width: 100%;
@@ -85,7 +76,7 @@ body {
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  grid-template-rows: 50px minmax(500px, 1fr);
+  grid-template-rows: 50px 1fr;
   background-color: #c1e3ff;
   background-image: url("https://judadeveloper.github.io/newaccount/banner.png");
   box-shadow: #00000059 0px 5px 15px;
