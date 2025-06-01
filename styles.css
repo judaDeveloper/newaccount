@@ -60,7 +60,6 @@
 
 body {
   display: grid;
-  /*height: calc(100% - 10px);*/
   overflow: hhidden;
   background-color: #37eb34;
   grid-template-columns: 1fr;
@@ -72,7 +71,6 @@ body {
   margin: 0 auto;
   max-width: 1420px;
   position: relative;
-  padding: 3px 5px 5px 5px;
 }
 
 .modal {
@@ -82,7 +80,6 @@ body {
   padding: 5px;
   display: grid;
   min-width: 300px;
-  position: absolute;
   grid-template-rows: 1fr;
   display: rnone;
 }
