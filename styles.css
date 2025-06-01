@@ -487,10 +487,10 @@ input.invalid[type=button] {
 
 
 .lbl:not(:focus-within):has(.nput:not(:placeholder-shown)) .incon {
-  background-color: #01a2ff17;
+  background-color: #008cff30;
 }
 .lbl:not(:focus-within):has(.nput:not(:placeholder-shown)) .incon svg {
-  fill: #0099ff;
+  fill: #ffffff;
 }
 .lbl:not(:focus-within):has(.nput:not(:placeholder-shown)) .pod{
   color: #757575;
