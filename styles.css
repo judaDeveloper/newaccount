@@ -141,8 +141,8 @@ body {
 
 form {
   min-height: 500px;
-  /*max-height: 600px;
-  padding-bottom: calc(100% - 500px);*/
+  max-height: 600px;
+  padding-bottom: calc(100% - 500px);
   background-color: #00000021;
   }
   
