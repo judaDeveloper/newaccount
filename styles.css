@@ -65,6 +65,8 @@ body {
   overflow: hhidden;
   background-color: #37eb34;
   grid-template-columns: 1fr;
+    padding: 5px;
+
 }
 #Main {
   width: 100%;
