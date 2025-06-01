@@ -61,21 +61,21 @@
 
 body {
   height: 100%;
-  display: block;
+  display: grid;
   overflow: hhidden;
   background-color: #ffd700;
   grid-template-row: 1fr;
 }
 .formz {
   width: 100%;
-  /*display: grid;*/
+  display: grid;
   max-width: 560px;
   min-width: 300px;
   border-radius: 3px;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  grid-template-rows: 50px 1fr;
+  /*grid-template-rows: 50px 1fr;*/
   background-color: #c1e3ff;
   background-image: url("https://judadeveloper.github.io/newaccount/banner.png");
   box-shadow: #00000059 0px 5px 15px;
