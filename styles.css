@@ -435,10 +435,15 @@ table.client {
   color: #008cff;
   transform: translate3d(0, -20px, 0) scale(0.78);
 }
-.conts:has(.nput:focus) {
+.contsrr:has(.nput:focus) {
   background-color: #ffffff;
   border: 1px solid #008cff;
 }
+.conts:focus-within {
+  background-color: #ffffff;
+  border: 1px solid #008cff;
+}
+
 
 .cbox label:hover {
   color: #008cff;
