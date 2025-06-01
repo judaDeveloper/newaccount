@@ -61,7 +61,7 @@
 
 body {
   height: 100%;
-  display: grid;
+  display: block;
   overflow: hhidden;
   background-color: #ffd700;
   grid-template-row: 1fr;
