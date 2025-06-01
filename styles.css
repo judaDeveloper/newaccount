@@ -1,3 +1,43 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  font-size: 13px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+/*
+  Smooth scroll
+*/
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  overflow: hhidden;
+  background-color: #ffffff;
+  grid-template-columns: 1fr;
+}
+#Main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  margin: 0 auto;
+  max-width: 1420px;
+  position: relative;
+  padding: 3px 5px 5px 5px;
+}
+
+
 @-moz-keyframes growdown {
   0% {
     transform: scaleY(0);
@@ -43,46 +83,40 @@
   }
 }
 
-
-* {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  border: none;
-  font-size: 13px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-body {
-  height: 100%;
-  background-color: #0000ff;
-}
-.formz {
+.modal {
   width: 100%;
   height: 100%;
-      background-color: #ff7373;
+  z-index: 999;
+  padding: 5px;
+  display: grid;
+  min-width: 300px;
+  position: absolute;
+  grid-template-rows: 1fr;
+  display: rnone;
 }
-
-
+.md {
+  width: 100%;
+  padding: 5px;
+  display: grid;
+  position: relative;
+  padding-top: calc(1% + 5px);
+  background-color: #0000004d;
+}
 .forms {
   width: 100%;
-  /*display: grid;*/
+  display: grid;
+  margin: 0 auto;
   max-width: 560px;
   min-width: 300px;
   border-radius: 3px;
-  height: 100%;
+  height: fit-content;
   background-size: cover;
   background-repeat: no-repeat;
-  grid-template-rows: 50px 1fr;
+  grid-template-rows: 50px minmax(500px, 1fr);
   background-color: #c1e3ff;
-  background-image: url("https://judadeveloper.github.io/newaccount/banner.png");
+  background-image: url("https://judadeveloper.github.io/registration/banner-2.png");
   box-shadow: #00000059 0px 5px 15px;
+  display: ynone;
 }
 .heada {
   width: 100%;
@@ -113,14 +147,13 @@ body {
 
 form {
   min-height: 500px;
-  height: 100%;
-  /*max-height: 600px;*/
- /* padding-bottom: calc(100% - 500px);*/
+  max-height: 600px;
+  padding-bottom: calc(100% - 500px);
   background-color: #00000021;
   }
   
 .forms:has(form.shown) {
-  display: none;
+  display: grid;
 }
 form.shown {
   display: grid;
@@ -209,7 +242,7 @@ table.client {
 }
 .txt .pod, 
 .drod .pod {
-  top: 15px;
+  top: 13px;
   left: 8%;
 }
 .txtb .pod {
@@ -275,7 +308,7 @@ table.client {
   min-height: 40px;
   border-radius: 100%;
   background-color: #24a8ff;
-  content: url("https://judadeveloper.github.io/newaccount/photo.svg");
+  content: url("https://judadeveloper.github.io/registration/user2.svg");
 }
 .imge .nput {
   width: 0;
@@ -588,6 +621,7 @@ input.invalid[type=button] {
 .successfull p:first-of-type {
   font-size: 20px;
   font-weight: 500;
+}
 .modal.saved .successfull {
   display: grid;
 }
