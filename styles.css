@@ -186,8 +186,8 @@ table.client {
 
 .lbl {
   width: 100%;
-  min-height: 50px;
-  padding: 2px;
+  min-height: 52px;
+  padding: 1px;
   display: grid;
   margin: 0px auto;
   max-width: 310px;
@@ -208,7 +208,7 @@ table.client {
   position: relative;
   border-radius: 0px 3px 3px 0px;
   grid-template-columns: 1fr;
-  background-color: #ffffff80;
+  background-color: #ffffff97;
 }
 .incon {
   height: 100%;
@@ -216,7 +216,7 @@ table.client {
   background-color: #abc7db44;
   border-radius: 3px 0px 0px 3px;
   border-right: 1px solid #97aab844;
-  background-color: #ffffff80;
+  background-color: #ffffff97;
 }
 
 .incon svg {
@@ -327,6 +327,7 @@ table.client {
   background-color: #fcfcfcd0;
   border: 1px solid #008cff8e;
 }
+.imge:has(.nput[type="file"]value = [])
 .imge .conts:hover img {
   scale: 105%;
 }
