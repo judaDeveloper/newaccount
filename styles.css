@@ -195,7 +195,7 @@ table.client {
   border-radius: 4px;
   margin-bottom: 15px;
   background-color: #ffffff;
-  background-color: #00000015;
+  border: 1px solid #eeeeee;
   grid-template-columns: minmax(50px, 20%) 1fr;
 }
 .lbl.txtb  {
@@ -208,17 +208,16 @@ table.client {
   position: relative;
   border-radius: 0px 3px 3px 0px;
   grid-template-columns: 1fr;
-  background-color: #ffffff97;
+  background-color: #ffffff;
 }
 .incon {
   height: 100%;
   display: grid;
-  background-color: #abc7db44;
+  background-color: #abc7db60;
   border-radius: 3px 0px 0px 3px;
   border-right: 1px solid #97aab844;
-  background-color: #ffffff97;
 }
-
+  
 .incon svg {
   width: 35%;
   height: 35%;
