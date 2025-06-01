@@ -234,7 +234,7 @@ table.client {
 }
 .txt .pod, 
 .drod .pod {
-  top: 13px;
+  top: 16px;
   left: 8%;
 }
 .txtb .pod {
@@ -300,7 +300,7 @@ table.client {
   min-height: 40px;
   border-radius: 100%;
   background-color: #24a8ff;
-  content: url("https://judadeveloper.github.io/registration/user2.svg");
+  content: url("https://judadeveloper.github.io/newaccount/photo.svg");
 }
 .imge .nput {
   width: 0;
@@ -508,8 +508,6 @@ input.invalid[type=button] {
   color: #000000;
   font-weight: bold;
 }
-
-
 
 
 .dox {
