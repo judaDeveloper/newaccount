@@ -77,18 +77,17 @@ body {
   width: 100%;
   height: 100%;
   z-index: 999;
-  padding: 5px;
   display: grid;
   min-width: 300px;
   grid-template-rows: 1fr;
   display: rnone;
+  height: calc(100% - 10px);
 }
 .md {
   width: 100%;
   padding: 5px;
   display: grid;
   position: relative;
-  padding-top: calc(1% + 5px);
   background-color: #0000004d;
 }
 .forms {
