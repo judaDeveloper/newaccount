@@ -141,7 +141,7 @@ body {
 
 form {
   min-height: 500px;
-  max-height: 600px;
+  /*max-height: 600px;*/
   padding-bottom: calc(100% - 500px);
  background-color: #00000030;
   }
@@ -341,7 +341,7 @@ table.client {
   cursor: pointer;
   font-size: 14px;
   align-items: center;
-  padding: 15px 0px 5px 0px;
+  padding: 15px 0px 5px 10px;
   grid-template-columns: 25px 1fr;
 }
 .cbox input[type="checkbox"] {
@@ -625,8 +625,6 @@ input.invalid[type=button] {
 }
 
 
-
-
 .submit {
   height: 60px;
   justify-content: center;
@@ -634,6 +632,10 @@ input.invalid[type=button] {
   border-radius:  0px 0px 4px 4px;
   padding: 5px calc((100% - 344px)/2);
 }
+.submit table {
+border-collapse: collapse;
+}
+
 .submit tr {
   display: grid;
   grid-template-columns: minmax(100px, 35%) 1fr;
