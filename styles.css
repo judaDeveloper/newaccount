@@ -275,7 +275,7 @@ table.client {
   height: fit-content;
   align-content: center;
   border-radius: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 10%;
   background-color: #00000013;
 }
 .imge .conts{
@@ -415,7 +415,7 @@ table.client {
   color: #008cff;
 }
 .lbl:hover .incon {
-  border-right: 1px solid #008cff;
+  border-right: 1px solid #008cff8e;
 }
 
 .lbl:focus-within {
@@ -426,7 +426,7 @@ table.client {
 }
 .lbl:focus-within .incon {
   border: none;
-  background-color: #ffffff38;
+  background-color: #ffffff60;
 }
 .txt:focus-within .pod,
 .drod:focus-within .pod {
