@@ -59,6 +59,7 @@
 }
 
 body {
+   height: 100%;
   display: grid;
   overflow: hhidden;
   background-color: #37eb34;
