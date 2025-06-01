@@ -141,9 +141,9 @@ body {
 
 form {
   min-height: 500px;
- /* max-height: 600px;
+  max-height: 600px;
   padding-bottom: calc(100% - 500px);
- background-color: #00000021;*/
+ background-color: #00000051;
   }
   
 .forms:has(form.shown) {
@@ -187,14 +187,15 @@ table.client {
 .lbl {
   width: 100%;
   height: 50px;
-  padding: 0px;
+  padding: 2px;
   display: grid;
   margin: 0px auto;
   max-width: 300px;
   position: relative;
   border-radius: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   background-color: #ffffff;
+  background-color: #00000013;
   grid-template-columns: minmax(50px, 20%) 1fr;
 }
 .lbl.txtb  {
@@ -207,7 +208,7 @@ table.client {
   position: relative;
   border-radius: 0px 3px 3px 0px;
   grid-template-columns: 1fr;
-
+  background-color: #ffffff;
 }
 .incon {
   height: 100%;
