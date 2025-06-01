@@ -59,14 +59,10 @@
 }
 
 body {
-  min-height: calc(100% - 10px);
-  display: flex;
-  flex-direction: column;
-  overflow: hhidden;
+  display: grid;
   background-color: #37eb34;
-  grid-template-columns: 1fr;
-    padding: 5px;
-
+  /*grid-template-columns: 1fr;*/
+  padding: 5px;
 }
 #Main {
   width: 100%;
