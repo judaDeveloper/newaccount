@@ -77,15 +77,13 @@ body {
   width: 100%;
   height: 100%;
   display: grid;
-  padding: 5px;
-  /*max-width: 1420px;*/
-  background-color: #eb2182;
-grid-template-rows: 1fr;
+  max-width: 1420px;
+  grid-template-rows: 1fr;
 }
 
 .modal {
   width: 100%;
-  /*height: 100%;*/
+  height: 100%;
   display: grid;
   min-width: 300px;
   grid-template-rows: 1fr;
