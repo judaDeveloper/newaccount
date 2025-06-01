@@ -352,13 +352,13 @@ table.client {
   cursor: pointer;
 }
 .cbox .conts {
-  grid-template-columns: minmax(25px, 35%) 1fr;
+  grid-template-columns: minmax(30px, 35%) 1fr;
 }
 .cbox:has(#w_status) .conts {
-  grid-template-columns: minmax(25px, 40%) 1fr;
+  grid-template-columns: minmax(30px, 40%) 1fr;
 }
 .dob .conts {
-  grid-template-columns: minmax(25px, 25%) minmax(25px, 25%) minmax(25px, 25%);
+  grid-template-columns: minmax(30px, 25%) minmax(30px, 28%) minmax(30px, 25%);
 }
 
 
