@@ -60,7 +60,8 @@
 
 body {
   height: 100%;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   overflow: hhidden;
   background-color: #37eb34;
   grid-template-columns: 1fr;
@@ -562,7 +563,7 @@ input.invalid[type=button] {
   width: 50%;
   min-width: 40px;
   min-height: 40px;
-  content: url("https://judadeveloper.github.io/registration/card.svg");
+  content: url("https://judadeveloper.github.io/newaccount/ximage.svg");
 }
 .dox .nput {
   opacity: 0;
