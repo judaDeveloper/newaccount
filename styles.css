@@ -60,7 +60,7 @@
 
 body {
   display: grid;
-  height: calc(100% - 10px);
+  /*height: calc(100% - 10px);*/
   overflow: hhidden;
   background-color: #ffffff;
   grid-template-columns: 1fr;
