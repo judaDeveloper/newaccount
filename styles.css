@@ -64,7 +64,7 @@ body {
   display: grid;
   overflow: hhidden;
   background-color: #ffd700;
-  grid-template-row: 100%;
+  grid-template-row: 1fr;
 }
 .formz {
   width: 100%;
