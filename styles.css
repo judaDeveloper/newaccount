@@ -60,7 +60,8 @@
 }
 
 body {
-    background-color: #0000ff;
+  height: 100vh;
+  background-color: #0000ff;
 }
 .formz {
   width: 100%;
