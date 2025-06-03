@@ -447,6 +447,29 @@ table.client {
 }
 
 
+.cbox, .dob {
+  display: grid;
+  grid-template-rows: 1fr;
+  position: relative;
+}
+.cbox span, .dob span {
+  top: 0px;
+  left: 15px;
+  font-size: 12px;
+  color: #999999;
+  position: absolute;
+  pointer-events: none;
+}
+.cbox input[type="text"], 
+.dob input[type="text"] {
+  padding: 0;
+  font-size: 20px;
+  pointer-events: none;
+  color: #000000;
+  background-color: #ffffff00;
+}
+
+
 .cbox label:hover {
   color: #008cff;
   font-weight: bold;
@@ -700,24 +723,3 @@ border-collapse: collapse;
 
 
 
-.cbox, .dob {
-  display: grid;
-  grid-template-rows: 1fr;
-  position: relative;
-}
-.cbox span, .dob span {
-  top: 0px;
-  left: 15px;
-  font-size: 12px;
-  color: #999999;
-  position: absolute;
-  pointer-events: none;
-}
-.cbox input[type="text"], 
-.dob input[type="text"] {
-  padding: 0;
-  font-size: 20px;
-  pointer-events: none;
-  color: #000000;
-  background-color: #ffffff00;
-}
