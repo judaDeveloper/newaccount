@@ -237,7 +237,8 @@ table.client {
   transform: translate3d(0, 0, 0);
 }
 .txt .pod, 
-.drod .pod {
+.drod .pod,
+.email .pod {
   top: 16px;
   left: 8%;
 }
@@ -429,7 +430,8 @@ table.client {
   background-color: #ffffff60;
 }
 .txt:focus-within .pod,
-.drod:focus-within .pod {
+.drod:focus-within .pod,
+.email:focus-within .pod {
   color: #008cff;
   transform: translate3d(0, -8px, 0) scale(0.78);
 }
