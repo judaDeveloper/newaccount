@@ -617,7 +617,7 @@ function w_statusChanged() {
 }
 //w_statusChanged();
 
-email.addEventListener("blur", () => {
+/*email.addEventListener("blur", () => {
   if (email.value !== "") {
     const emailRegex =
       /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -627,7 +627,7 @@ email.addEventListener("blur", () => {
     }
     email.classList.add("invalid");
   }
-});
+});*/
 
 /*============================
    Current Form Input Changes
@@ -639,6 +639,16 @@ allinputs.forEach((nput) => {
   nput.addEventListener("blur", function () {
     let txt = nput.value;
     if (nput.type == "email") {
+	    if (nput.value !== "") {
+		    const emailRegex =
+			    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+				if (nput.value.match(emailRegex)) {
+					nput.classList.remove("invalid");
+					return;
+				}
+				nput.classList.add("invalid");
+			}
+	    
       nput.value = txt.toLowerCase();
     } else {
       nput.value = txt.toLowerCase().replace(/\b\w/g, (s) => s.toUpperCase());
