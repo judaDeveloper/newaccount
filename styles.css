@@ -187,7 +187,7 @@ table.client {
 .lbl {
   width: 100%;
   min-height: 52px;
-  padding: 1px;
+  padding: 0px;
   display: grid;
   margin: 0px auto;
   max-width: 310px;
@@ -462,8 +462,10 @@ input[type="checkbox"]:checked {
   font-weight: bold;
 }
 
-
-.lbl:has(.nput.invalid) .conts {
+/*.lbl:has(.nput.invalid:not(type="file")) .conts {
+  border: 1px solid #ff686885;
+}*/
+.lbl:has(.nput:not(type="file").invalid) .conts {
   border: 1px solid #ff686885;
 }
 .lbl:has(.nput.invalid:not([type=file])) .pod {
