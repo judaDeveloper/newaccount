@@ -485,10 +485,9 @@ input[type="checkbox"]:checked {
   font-weight: bold;
 }
 
-.lbl:has(.nput.invalid[type="file"]) {
-  /*border: 1px solid #ff686885;*/
-  background-color: #ff686885;
-}
+
+/* Input Invalid
+*/
 
 .lbl:has(.nput:not([type="file"]).invalid) .conts {
   border: 1px solid #ff686885;
@@ -499,11 +498,18 @@ input[type="checkbox"]:checked {
 .lbl:has(.nput.invalid) .incon svg {
   fill: #f86464;
 }
+.lbl:has(.nput.invalid[type="file"]) {
+  background-color: #ff686825;
+}
 
-/* Focus-Within
+/* Focus-Within & Input invalid
 */
-.lbl:focus-within:has(.nput:not([type="file"]).invalid) .incon{
+
+.lbl:focus-within:has(.nput:not([type="file"]).invalid) .incon {
   background-color: #ff9f9f;
+}
+.lbl:focus-within:has(.nput:not([type="file"]).invalid) .incon svg {
+  fill: #ffffff;
 }
 
 
@@ -549,6 +555,7 @@ input.invalid[type=button] {
 .lbl:not(:focus-within):has(.nput:not(:placeholder-shown):not([type=file])) .conts{
   border: 1px solid #008cff70;
 }
+
 .bxd1:not(:hover)[value]:not([value="DD"]), 
 .bxd2:not(:hover)[value]:not([value="MM"]), 
 .bxd3:not(:hover)[value]:not([value="YY"]) {
