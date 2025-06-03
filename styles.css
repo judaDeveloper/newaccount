@@ -195,7 +195,7 @@ table.client {
   border-radius: 4px;
   margin-bottom: 15px;
   background-color: #ffffff;
-  border: 1px solid #eeeeee;
+  /*border: 1px solid #eeeeee;*/
   grid-template-columns: minmax(50px, 20%) 1fr;
 }
 .lbl.txtb  {
