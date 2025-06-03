@@ -77,7 +77,7 @@ let pic = document.getElementById("imagefile");
 
 let idnum = document.getElementById("idnumber");
 let krapin = document.getElementById("krapin");
-let email = document.getElementById("email");
+let email = document.getElementById("emailaddress");
 let mobno1 = document.getElementById("phonenum1");
 let mobno2 = document.getElementById("altvenumber");
 let mobno3 = document.getElementById("phonenum3");
