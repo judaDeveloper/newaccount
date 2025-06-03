@@ -707,7 +707,7 @@ const netxt_tab = (step) => {
     x[1].innerText = "NEXT";
   }
 };
-netxt_tab(4);
+netxt_tab(2);
 
 /*=====================
   Validate Empty Inputs
