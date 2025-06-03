@@ -462,10 +462,11 @@ input[type="checkbox"]:checked {
   font-weight: bold;
 }
 
-/*.lbl:has(.nput.invalid:not(type="file")) .conts {
-  border: 1px solid #ff686885;
-}*/
-.lbl:has(.nput:not(type="file").invalid) .conts {
+.lbl:has(.nput.invalid[type="file"]) {
+  /*border: 1px solid #ff686885;*/
+  border-color: #ff686885;
+}
+.lbl:has(.nput:not([type="file"]).invalid) .conts {
   border: 1px solid #ff686885;
 }
 .lbl:has(.nput.invalid:not([type=file])) .pod {
