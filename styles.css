@@ -557,6 +557,13 @@ input.invalid[type=button] {
 .lbl:not(:focus-within):has(.nput:not(:placeholder-shown):not([type=file])) .conts{
   border: 1px solid #008cff70;
 }
+#ff0000
+
+.lbl:not(:focus-within):has(.bxd1:not(:hover)[value="DD"]))) .conts,
+.lbl:not(:focus-within):has(.bxd2:not(:hover)[value="MM"]))) .conts, 
+.lbl:not(:focus-within):has(.bxd3:not(:hover)[value="YY"]))) .conts {
+  border: 1px solid #008cff70;
+}
 
 .bxd1:not(:hover)[value]:not([value="DD"]), 
 .bxd2:not(:hover)[value]:not([value="MM"]), 
