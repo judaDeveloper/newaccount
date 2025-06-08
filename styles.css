@@ -85,6 +85,7 @@ Photo*/
 }
 .myprev {
   width: 150px:
+  max-width: 160px;
   min-height: 50px;
   height: auto;
 }
