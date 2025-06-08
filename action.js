@@ -531,7 +531,7 @@ const compressimage = (nput, preview) => {
     };
   }
 };
-compressimage(imginput, "prev0");
+compressimage(imginput, "myprev");
 compressimage(doc1, "prev1");
 compressimage(doc2, "prev2");
 compressimage(doc3, "prev3");
