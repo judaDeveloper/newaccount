@@ -734,14 +734,15 @@
                     </svg>
                   </p>
                   <label for="w_contact" class="conts">
-                    <span class="pod pd4">Company contact</span>
+                    <span class="pod pd4">Employer contact</span>
                     <input
                       class="nput"
-                      type="text"
+                      type="tel"
                       id="w_contact"
                       placeholder=""
                       minlength="10"
                       maxlength="10"
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                       onkeypress="validatenumber(event)"
                       oninput="this.className='nput'"
                     />
@@ -812,11 +813,12 @@
                     <span class="pod">Phone number</span>
                     <input
                       class="nput"
-                      type="text"
+                      type="tel"
                       id="nok_contact"
                       placeholder=""
                       minlength="10"
                       maxlength="10"
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                       onkeypress="validatenumber(event)"
                       oninput="this.className='nput'"
                     />
