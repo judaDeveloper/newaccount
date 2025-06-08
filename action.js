@@ -716,21 +716,21 @@ const netxt_tab = (step) => {
     photo.classList.add("shown");
   }
 
-  let xtab = document.querySelector(".tabname");
+  let tab = document.querySelector(".tabname");
   if (current_tab == 0) {
-    xtab.innerText = "Basic info";
+    tab.innerText = "Basic info";
   } else if (current_tab == 1) {
-    xtab.innerText = "Identity data";
+    tab.innerText = "Identity data";
   } else if (current_tab == 2) {
-    xtab.innerText = "Contact info";
+    tab.innerText = "Contact info";
   } else if (current_tab == 3) {
-    xtab.innerText = "Adress details";
+    tab.innerText = "Adress details";
   } else if (current_tab == 4) {
-    xtab.innerText = "Employment status";
+    tab.innerText = "Employment status";
   } else if (current_tab == 5) {
-    xtab.innerText = "Next of kin";
+    tab.innerText = "Next of kin";
   } else if (current_tab == 6) {
-    xtab.innerText = "Terms & Conditions";
+    tab.innerText = "Terms & Conditions";
   }
 };
 netxt_tab(6);
