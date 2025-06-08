@@ -32,6 +32,8 @@
           <form  id="userform"  action="">
             <div class="file">
               <p>REGISTRATION</p>
+              <img id="myprev" src="" alt="" />
+
               <div class="image">
                 <label for="inputfile" class="conts">
                   <input
@@ -42,7 +44,7 @@
                     data-url=""
                     required
                     oninput="this.className = 'nput'"
-                    onchange="compressimage(this, 'prev0')"
+                    onchange="compressimage(this, 'myprev')"
                   />
                   <img id="prev0" src="" alt="" />
                   <span> Upload </span>
