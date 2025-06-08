@@ -726,11 +726,11 @@ const netxt_tab = (step) => {
   } else if (current_tab == 3) {
     xtab.innerText = "Adress details";
   } else if (current_tab == 4) {
-    xtab.innerText = "Employment info";
+    xtab.innerText = "Employment status";
   } else if (current_tab == 5) {
-    xtab.innerText = "Basic Data";
+    xtab.innerText = "Next of kin";
   } else if (current_tab == 6) {
-    xtab.innerText = "Basic Data";
+    xtab.innerText = "Terms & Conditions";
   }
 };
 netxt_tab(0);
