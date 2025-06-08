@@ -36,7 +36,7 @@ body {
   grid-template-rows: 50px 1fr;
   background-repeat: no-repeat;
   background-color: #00a2ffb2;
-  background-image: url(files/banner.png);
+  background-image: url("https://judadeveloper.github.io/newaccount/banner.png");
 }
 .heada {
   display: grid;
