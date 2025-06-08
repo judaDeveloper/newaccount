@@ -83,6 +83,11 @@ Photo*/
   text-align: center;
   padding: 10px;
 }
+.myprev {
+  width 150px:
+  min-height: 50px;
+  height: auto;
+}
 .image {
   padding: 10px;
   display: grid;
