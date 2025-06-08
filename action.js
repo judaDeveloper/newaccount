@@ -733,7 +733,7 @@ const netxt_tab = (step) => {
     xtab.innerText = "Terms & Conditions";
   }
 };
-netxt_tab(0);
+netxt_tab(6);
 
 /*=====================
   Validate Empty Inputs
