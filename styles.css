@@ -462,6 +462,7 @@ input.invalid[type="button"] {
 }
 .docs .conts {
   width: 100%;
+  padding: 0px;
   /*margin: auto;*/
   display: grid;
   height: 100px;
