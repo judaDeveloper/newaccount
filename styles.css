@@ -31,6 +31,7 @@ body {
   margin: auto;
   display: grid;
   max-width: 500px;
+  height: fit-content;
   border-radius: 6px;
   background-size: cover;
   grid-template-rows: 50px 1fr;
@@ -167,6 +168,7 @@ Photo*/
   font-size: 18px;
 }
 .lb {
+  width: 100%;
   display: grid;
   margin: 0px auto;
   max-width: 300px;
