@@ -32,7 +32,6 @@ body {
   display: grid;
   max-width: 500px;
   border-radius: 6px;
-  height: fit-content;
   background-size: cover;
   grid-template-rows: 50px 1fr;
   background-repeat: no-repeat;
