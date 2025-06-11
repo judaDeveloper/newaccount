@@ -177,6 +177,7 @@ Photo*/
   border-radius: 5px;
   margin-bottom: 12px;
   background-color: transparent;
+  background-color: #00000035;
   grid-template-columns: minmax(40px, 14%) 1fr;
 }
 
