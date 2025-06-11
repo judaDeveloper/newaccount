@@ -179,9 +179,7 @@ Photo*/
   background-color: #eaf5ff;
   grid-template-columns: minmax(40px, 14%) 1fr;
 }
-.lb label {
-    background-color: transparent;
-}
+
 .nput {
   height: 100%;
   border-radius: 5px;
@@ -194,7 +192,7 @@ Photo*/
   opacity: 0;
   position: absolute;
 }
-.conts {
+.lb .conts {
   width: 100%;
   height: 50px;
   display: grid;
@@ -339,7 +337,7 @@ input.invalid[type="button"] {
   transform: translate3d(0, -35px, 0) scale(0.8);
 }
 
-.lb:not(:focus-within):has(.nput:not(:placeholder-shown)) {
+.lb:has(.nput:not(:placeholder-shown)):not(:focus-within) {
   border: 1px solid #008cff70;
     background-color: #fff3f3;
 }
@@ -365,10 +363,8 @@ input.invalid[type="button"] {
   transform: translate3d(0, -35px, 0) scale(0.8);
 }
 */
-.bxd1:not(:hover)[value]:not([value="DD"]), 
-.bxd2:not(:hover)[value]:not([value="MM"]), 
-.bxd3:not(:hover)[value]:not([value="YY"]) {
-  font-size: 14px;
+.nput[type="button"]:not(:hover)[value]:not([value="DD"], [value="MM"], [value="YY"]) {
+  font-size: 10px;
   color: #000000;
   font-weight: bold;
 }
