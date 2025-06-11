@@ -773,14 +773,6 @@ function validateEmpties(btn) {
     }
   }
 
-  if (imginput.files.length == 0) {
-    imginput.classList.add("invalid");
-    valid = false;
-    btn.classList.add("invalid");
-  } else {
-    imginput.classList.remove("invalid");
-  }
-
   if (valid) {
     if (current_tab == 6) {
       createnew_id();
@@ -789,6 +781,15 @@ function validateEmpties(btn) {
     }
   }
 }
+
+/*  if (imginput.files.length == 0) {
+    imginput.classList.add("invalid");
+    valid = false;
+    btn.classList.add("invalid");
+  } else {
+    imginput.classList.remove("invalid");
+  } */
+
 
 /*
 /*=====================
