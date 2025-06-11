@@ -727,17 +727,17 @@ const netxt_tab = (step) => {
 
   let tab = document.querySelector(".tabname");
   if (current_tab == 0) {
-    tab.innerText = "Basic info";
+    tab.innerText = "Profile";
   } else if (current_tab == 1) {
-    tab.innerText = "Identity data";
+    tab.innerText = "Identity";
   } else if (current_tab == 2) {
-    tab.innerText = "Contact info";
+    tab.innerText = "Contacts";
   } else if (current_tab == 3) {
-    tab.innerText = "Adress details";
+    tab.innerText = "Adress";
   } else if (current_tab == 4) {
-    tab.innerText = "Employment status";
+    tab.innerText = "Employment";
   } else if (current_tab == 5) {
-    tab.innerText = "Next of kin";
+    tab.innerText = "Next kin";
   } else if (current_tab == 6) {
     tab.innerText = "Terms & Conditions";
   }
