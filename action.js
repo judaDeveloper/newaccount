@@ -518,12 +518,14 @@ const compressimage = (nput, preview) => {
 
       img.onload = function (el) {
         let x = document.createElement("canvas");
-        let xW = el.target.width;
-        let xH = el.target.height;
-        /*x.height = 150;*/
-        x.width = (xW / xH) * 140;
-        let cx = x.getContext("2d");
+        let oW = el.target.width;
+        let oH = el.target.height;	
+        x.width = (150/oH) * oW;
+        x.height = 150;
+        let cx = x.getContext("2d");	    
         cx.drawImage(el.target, 0, 0, x.width, x.height);
+
+
         let srcEncoded = cx.canvas.toDataURL("image/png", 1);
         nput.dataset.url = srcEncoded;
         document.getElementById(preview).src = nput.dataset.url;
