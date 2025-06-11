@@ -165,7 +165,8 @@ Photo*/
   padding: 5px 5px;
   margin: 0px auto;
   max-width: 300px;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 600px;
 }
 .lb {
   width: 100%;
@@ -174,16 +175,17 @@ Photo*/
   column-gap: 2px;
   max-width: 300px;
   position: relative;
-  border-radius: 5px;
+  border-radius: 6px;
   margin-bottom: 12px;
   background-color: #eaf5ff;
   grid-template-columns: minmax(40px, 14%) 1fr;
 }
 .nput {
   height: 100%;
+  border-radius: 5px;
   padding: 15px 5px 5px 0px;
   background-color: transparent;
-  background-color: #c4818198;
+  /*background-color: #c4818198;*/
 }
 .nput[type="file"] {
   width: 0;
@@ -196,7 +198,7 @@ Photo*/
   height: 50px;
   display: grid;
   column-gap: 5%;
-  border-radius: 4px;
+  border-radius: 5px;
   position: relative;
   padding: 0px 5px 0px 20px;
   grid-template-columns: 1fr;
@@ -208,9 +210,10 @@ Photo*/
 }
 .incon {
   display: grid;
-  border-radius: 4px 0px 0px 4px;
-  /*background-color: #000005;/*
+  border-radius: 5px 0px 0px 5px;
+  /*background-color: #000005;*/
 }
+
 .incon svg {
   width: 40%;
   height: 40%;
@@ -239,13 +242,7 @@ Photo*/
   font-size: 11px;
   pointer-events: none;
 }
-.nput {
-  height: 100%;
-  font-size: 14px;
-  padding: 20px 5px 5px 0px;
-  background-color: #ffffff00;
-  border-radius: 0px 4px 4px 0px;
-}
+
 .dob .nput,
 .cbox .nput {
   /*width: 0px;
