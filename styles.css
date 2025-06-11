@@ -194,7 +194,7 @@ Photo*/
   opacity: 0;
   position: absolute;
 }
-.lb .conts {
+.conts {
   width: 100%;
   height: 50px;
   display: grid;
@@ -365,6 +365,13 @@ input.invalid[type="button"] {
   transform: translate3d(0, -35px, 0) scale(0.8);
 }
 */
+.bxd1:not(:hover)[value]:not([value="DD"]), 
+.bxd2:not(:hover)[value]:not([value="MM"]), 
+.bxd3:not(:hover)[value]:not([value="YY"]) {
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+}
 
 
 .dropdwn {
