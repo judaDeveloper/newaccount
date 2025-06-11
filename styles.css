@@ -25,6 +25,8 @@ body {
   padding: 20px 5px;
   /*min-height: fit-content;*/
   background-color: #F0F8FF;
+  background: #0d0d0d;
+background: linear-gradient(90deg, rgba(13, 13, 13, 1) 0%, rgba(255, 255, 255, 1) 100%, rgba(171, 171, 171, 1) 100%);
 }
 .container {
   width: 100%;
