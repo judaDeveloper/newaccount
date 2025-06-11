@@ -176,7 +176,7 @@ Photo*/
   position: relative;
   border-radius: 5px;
   margin-bottom: 12px;
-  background-color: #eaf5ff;
+  background-color: transparent;
   grid-template-columns: minmax(40px, 14%) 1fr;
 }
 
@@ -285,6 +285,11 @@ Photo*/
   grid-template-columns: minmax(25px, 25%) minmax(25px, 25%) minmax(25px, 25%);
 }
 
+
+
+/*
+background-color: #eaf5ff;
+
 .lb:hover  {
   background-color: #c1e3ff;
 }
@@ -341,7 +346,7 @@ input.invalid[type="button"] {
   border: 1px solid #008cff70;
     background-color: #fff3f3;
 }
-
+*/
 
 /*.conts:has(.nput:not([type="file"]):focus) {
   background-color: #ffffff;
