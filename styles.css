@@ -208,7 +208,7 @@ Photo*/
 .incon {
   display: grid;
   border-radius: 4px 0px 0px 4px;
-  background-color: #000005;
+  /*background-color: #000005;/*
 }
 .incon svg {
   width: 40%;
