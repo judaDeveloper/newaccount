@@ -94,7 +94,7 @@ Photo*/
   position: relative;
   height: fit-content;
   border-radius: 8px;
-  background-color: #ffffff42;
+  background-color: #000042;
 }
 .image.shown {
   display: grid;
@@ -139,7 +139,7 @@ Photo*/
   background-color: #0e9efd;
   content: url("https://judadeveloper.github.io/newaccount/photo.svg");
 }
-.image img[src=""] ~ .image span{
+.image:has(img[src=""]) .image span{
   display: block;
 }
 /*Photo
