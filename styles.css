@@ -124,6 +124,7 @@ Photo*/
   color: #686868;
   text-align: center;
   position: absolute;
+  display: none;
 }
 .image img {
   width: 100%;
@@ -131,7 +132,6 @@ Photo*/
   height: 150px;
   min-height: 150px;
   border-radius: 5px;
-  display: none;
 }
 .image img[src=""] {
   width: 60px;
@@ -143,10 +143,9 @@ Photo*/
   background-color: #0e9efd;
   content: url("https://judadeveloper.github.io/newaccount/photo.svg");
 }
-/*.image:has(img[src=""]) .image span{
+.image:has(img[src=""]) .image span{
   display: block;
 }
-*/
 
 .tab {
   display: none;
