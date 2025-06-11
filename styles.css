@@ -494,7 +494,7 @@ input.invalid[type="button"] {
   background-color: #ffffff;
   border: 1px solid #cacaca;
 }
-.docs .imgfile {
+.docs .imgfile[src=""] {
   width: 40px;
   height: 40px;
   margin: auto;
@@ -516,17 +516,6 @@ input.invalid[type="button"] {
   content: url("https://judadeveloper.github.io/newaccount/ximage.svg");
 }
 */
-
-.tab.agreement {
-  width: 100%;
-  overflow-y: scroll;
-  height: 400px);
-  background-color: white;
-}
-.agreement .conditions {
-  width: 100%;
-  height: fit-content;
-}
 
 
 .submit {
