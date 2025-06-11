@@ -171,6 +171,7 @@ Photo*/
   position: relative;
   border-radius: 5px;
   margin-bottom: 12px;
+  background-color: #eaf5ff;
   grid-template-columns: minmax(40px, 15%) 1fr;
 }
 .nput {
@@ -203,8 +204,7 @@ Photo*/
 .incon {
   display: grid;
   border-radius: 4px 0px 0px 4px;
-  background-color: #00000005;
-  background-color: #eaf5ff;
+  background-color: #000005;
 }
 .incon svg {
   width: 40%;
