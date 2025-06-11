@@ -506,13 +506,13 @@ input.invalid[type="button"] {
 }
 */
 
-.tab.conditions {
+.tab.agreement {
   width: 100%;
   display: block;
   overflow-y: scroll;
   height: 100%;
 }
-.conditions .container {
+.agreement .conditions {
   width: 100%;
   display: grid;
   height: fit-content;
