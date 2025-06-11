@@ -24,8 +24,7 @@ body {
   display: grid;
   padding: 20px 5px;
   /*min-height: fit-content;*/
-  background: #020024;
-  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 162, 255, 1) 50%, rgba(0, 212, 255, 1) 100%);
+  background-color: #F0F8FF;
 }
 .container {
   width: 100%;
