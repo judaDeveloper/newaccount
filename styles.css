@@ -519,7 +519,6 @@ input.invalid[type="button"] {
 
 .tab.agreement {
   width: 100%;
-  display: block;
   overflow-y: scroll;
   height: 400px);
   background-color: white;
