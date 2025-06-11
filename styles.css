@@ -512,15 +512,13 @@ input.invalid[type="button"] {
 
 .tab.agreement {
   width: 100%;
-  display: grid;
+  display: block;
   overflow-y: scroll;
-  height: calc(100% - 300px);
-background-color: white;
-
+  height: 400px);
+  background-color: white;
 }
 .agreement .conditions {
   width: 100%;
-  display: grid;
   height: fit-content;
 }
 
