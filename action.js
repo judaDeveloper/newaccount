@@ -682,7 +682,7 @@ const createnew_id = () => {
   Form Tabs Navigation
 ------------------------*/
 
-let steps = current_form.querySelectorAll(".steps p");
+/*let steps = current_form.querySelectorAll(".steps p");
 
 const stepIndicator = (index) => {
   for (let i = 0; i < steps.length; i++) {
@@ -691,10 +691,9 @@ const stepIndicator = (index) => {
       steps[i].classList.add("current");
     }
   }
-};
+};*/
 
 let tabs = current_form.querySelectorAll(".inputs .tab");
-
 const netxt_tab = (step) => {
   if (step > 0 && current_tab < 6) {
     current_tab = current_tab + step;
@@ -708,7 +707,7 @@ const netxt_tab = (step) => {
       tabs[i].classList.add("shown");
     }
   }
-  stepIndicator(current_tab);
+  //stepIndicator(current_tab);
 
   let x = document.querySelectorAll(".submit button");
   let photo = document.querySelector(".image");
