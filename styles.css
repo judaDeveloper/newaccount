@@ -171,12 +171,13 @@ Photo*/
   width: 100%;
   display: grid;
   margin: 0px auto;
+  column-gap: 2px;
   max-width: 300px;
   position: relative;
   border-radius: 5px;
   margin-bottom: 12px;
   background-color: #eaf5ff;
-  grid-template-columns: minmax(40px, 15%) 1fr;
+  grid-template-columns: minmax(40px, 14%) 1fr;
 }
 .nput {
   height: 100%;
