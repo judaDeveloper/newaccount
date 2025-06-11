@@ -87,13 +87,13 @@ Photo*/
   padding: 10px;
 }
 .image {
-  padding: 10px;
+  padding: 8px;
   display: grid;
   margin: 0 auto;
   max-width: fit-content;
   position: relative;
   height: fit-content;
-  border-radius: 8px;
+  border-radius: px;
   background-color: #00000042;
 }
 .image.shown {
@@ -109,13 +109,13 @@ Photo*/
   position: relative;
   width: fit-content;
   height: fit-content;
-  border-radius: 8px;
+  border-radius: 6px;
   justify-items: center;
   background-color: #ffffff;
 }
 .image span{
   left: 0;
-  top: 90%;
+  top: 85%;
   width: 100%;
   color: #686868;
   text-align: center;
