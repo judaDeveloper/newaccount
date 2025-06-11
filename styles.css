@@ -121,8 +121,8 @@ Photo*/
 }
 .image img {
   width: 100%;
+/*  width: 140px; */
   height: 150px;
-  min-width: 140px;
   min-height: 150px;
   border-radius: 6px;
 }
