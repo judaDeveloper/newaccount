@@ -97,8 +97,8 @@ Photo*/
   max-width: fit-content;
   position: relative;
   height: fit-content;
-  border-radius: px;
-  background-color: #00000042;
+  border-radius: 6px;
+  background-color: #00000035;
 }
 .image.shown {
   display: grid;
