@@ -547,8 +547,8 @@ fileinputs.forEach((input) => {
   input.addEventListener("click", (e) => {
    let x = e.target.files[0];
      if (x) { 
-			 alert(fileinputs.length);
-		 }
+	alert(fileinputs.length);
+     }
   });  
 });
 
@@ -590,9 +590,9 @@ function newuserdata(cid) {
       nok_area.value,
       nok_tel.value.toString(),
     ],
-    images: [imginput.dataset.url],
-    docs: [doc1.dataset.url, doc2.dataset.url, doc3.dataset.url],
-    iddocs: [doc4.dataset.url, doc5.dataset.url, doc6.dataset.url],
+    images: [file_1.dataset.url],
+    docs: [file_2.dataset.url, file_3.dataset.url, file_4.dataset.url],
+    iddocs: [file_5.dataset.url, file_6.dataset.url, file_7.dataset.url],
     regdate: new Date().toLocaleDateString(),
   };
   sessionStorage.setItem("cc_newuser", JSON.stringify(newdata));
