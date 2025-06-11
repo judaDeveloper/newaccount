@@ -486,6 +486,8 @@ input.invalid[type="button"] {
   background-color: #ffffff;
   border: 1px solid #cacaca;
 }
+
+/*
 .docs img{
   margin: auto;
   min-width: 90px;
@@ -498,7 +500,7 @@ input.invalid[type="button"] {
   margin: auto;
   content: url("https://judadeveloper.github.io/newaccount/ximage.svg");
 }
-
+*/
 
 
 .submit {
