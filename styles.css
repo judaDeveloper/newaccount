@@ -177,7 +177,7 @@ Photo*/
   column-gap: 2px;
   max-width: 300px;
   position: relative;
-  border-radius: 6px;
+  border-radius: 5px;
   margin-bottom: 12px;
   background-color: #eaf5ff;
   grid-template-columns: minmax(40px, 14%) 1fr;
@@ -185,7 +185,7 @@ Photo*/
 
 .nput {
   height: 100%;
-  border-radius: 5px;
+  border-radius: 4px;
   padding: 15px 5px 5px 0px;
   background-color: transparent;
 }
@@ -195,12 +195,12 @@ Photo*/
   opacity: 0;
   position: absolute;
 }
-.lb .conts {
+.conts {
   width: 100%;
   height: 50px;
   display: grid;
   column-gap: 5%;
-  border-radius: 5px;
+  border-radius: 4px;
   position: relative;
   padding: 0px 5px 0px 20px;
   grid-template-columns: 1fr;
@@ -367,7 +367,7 @@ input.invalid[type="button"] {
 }
 */
 .nput[type="button"]:not(:hover)[value]:not([value="DD"], [value="MM"], [value="YY"]) {
-  font-size: 10px;
+  font-size: 7px;
   color: #000000;
   font-weight: bold;
 }
