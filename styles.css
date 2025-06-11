@@ -94,7 +94,7 @@ Photo*/
   position: relative;
   height: fit-content;
   border-radius: 8px;
-  background-color: #000042;
+  background-color: #00000042;
 }
 .image.shown {
   display: grid;
