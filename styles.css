@@ -507,9 +507,17 @@ input.invalid[type="button"] {
 */
 
 .tab.conditions {
+  width: 100%;
+  display: block;
   overflow-y: scroll;
-  height: calc(100% - 200px);
+  height: 100%;
 }
+.conditions .container {
+  width: 100%;
+  display: grid;
+  height: fit-content;
+}
+
 
 .submit {
   width: 100%;
