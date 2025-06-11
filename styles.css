@@ -346,7 +346,7 @@ input.invalid[type="button"] {
 }
 */
 
-.conts:has(.nput:not([type="file"]):focus-within) {
+.conts:has(.nput:not([type="file"])):focus-within {
   background-color: #ffffff;
   border: 1px solid #008cffa9;
 }
