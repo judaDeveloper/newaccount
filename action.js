@@ -526,7 +526,6 @@ const compressimage = (nput, preview) => {
         let cx = x.getContext("2d");	    
         cx.drawImage(el.target, 0, 0, x.width, x.height);
 
-
         let srcEncoded = cx.canvas.toDataURL("image/png", 1);
         nput.dataset.url = srcEncoded;
         document.getElementById(preview).src = nput.dataset.url;
@@ -541,6 +540,17 @@ compressimage(file_4, "image_4");
 compressimage(file_5, "image_5");
 compressimage(file_6, "image_6");
 compressimage(file_7, "image_7");
+
+//let imagefiles = document.querySelectorAll(".imgfile");
+let fileinputs = document.querySelectorAll(".lb input[type='file']");
+fileinputs.forEach((input) => {
+  input.addEventListener("change", (e) => {
+   let x = e.target.files[0];
+     if (x) { 
+			 alert(fileinputs.length);
+		 }
+  });  
+});
 
 /*=====================
   Fetch Form Data
@@ -836,12 +846,6 @@ function addDays(date, days) {
   newDate.setDate(date.getDate() + days);
   return newDate;
 }
-let imagefiles = document.querySelectorAll(".imgfile");
-function getImages() {
-  alert(imagefiles.length);
-}
-
-getImages();
 
 
 /*
