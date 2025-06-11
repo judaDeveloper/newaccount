@@ -837,10 +837,10 @@ function addDays(date, days) {
 }
 let imagefiles = document.querySelectorAll(".imgfile");
 function getImages() {
-	alert(imagefiles.length);
+  alert(imagefiles.length);
 }
 
-getImages():
+getImages();
 
 
 /*
