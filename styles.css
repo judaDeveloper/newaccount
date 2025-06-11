@@ -180,6 +180,9 @@ Photo*/
   background-color: #eaf5ff;
   grid-template-columns: minmax(40px, 14%) 1fr;
 }
+.lb label {
+    background-color: transparent;
+}
 .nput {
   height: 100%;
   border-radius: 5px;
