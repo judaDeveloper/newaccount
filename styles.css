@@ -151,9 +151,9 @@ Photo*/
   display: grid;
 }
 .inputs {
-  max-width: 350px;
+  max-width: 400px;
   margin: 10px auto;
-  min-height: 350px;
+  min-height: 400px;
   border-radius: 5px;
   padding-bottom: 20px;
   background-color: #00000000;
@@ -488,7 +488,10 @@ input.invalid[type="button"] {
   border: 1px solid #cacaca;
 }
 .docs .imgfile {
-  
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  content: url("https://judadeveloper.github.io/newaccount/ximage.svg");
 }
 
 
@@ -509,9 +512,11 @@ input.invalid[type="button"] {
 
 .tab.agreement {
   width: 100%;
-  display: block;
+  display: grid;
   overflow-y: scroll;
-  height: 100%;
+  height: calc(100% - 300px);
+background-color: white;
+
 }
 .agreement .conditions {
   width: 100%;
