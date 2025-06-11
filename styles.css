@@ -23,8 +23,8 @@ body {
   height: 100%;
   display: grid;
   padding: 20px 5px;
-  /*min-height: fit-content; */
-  background-color: #8f8f8f;
+  /*min-height: fit-content;
+  background-color: #8f8f8f;  */
 }
 .container {
   width: 100%;
