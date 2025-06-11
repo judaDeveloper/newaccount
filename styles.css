@@ -211,6 +211,7 @@ Photo*/
   display: grid;
   border-radius: 5px 0px 0px 5px;
   /*background-color: #000005;*/
+  background-color: #eaf5ff;
 }
 
 .incon svg {
