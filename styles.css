@@ -127,6 +127,7 @@ Photo*/
   height: 150px;
   min-height: 150px;
   border-radius: 6px;
+  display: none;
 }
 .image img[src=""] {
   width: 60px;
@@ -137,6 +138,9 @@ Photo*/
   border-radius: 100%;
   background-color: #0e9efd;
   content: url("https://judadeveloper.github.io/newaccount/photo.svg");
+}
+.image img[src=""] ~ .image span{
+  display: block;
 }
 /*Photo
 */
