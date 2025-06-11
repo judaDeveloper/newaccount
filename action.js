@@ -79,7 +79,7 @@ let idnum = document.getElementById("idnumber");
 let krapin = document.getElementById("krapin");
 let email = document.getElementById("email");
 let phone = document.getElementById("phonenum1");
-let altphone = document.getElementById("altvenumber");
+let altphone = document.getElementById("altnumber");
 
 let county = document.getElementById("county");
 let currtown = document.getElementById("town");
@@ -497,9 +497,6 @@ const setfullname = () => {
   return x;
 };
 
-/*=====================
-  Image File Input
------------------------*/
 /*=====================
   Image File Input
 -----------------------*/
