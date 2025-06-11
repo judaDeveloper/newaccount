@@ -74,7 +74,7 @@ let lastname = document.getElementById("lname");
 let dobirth = document.getElementById("dateob");
 let gender = document.getElementById("genda");
 let marital = document.getElementById("marital");
-let imginput = document.getElementById("inputfile");
+let file_1 = document.getElementById("inputfile");
 
 let idnum = document.getElementById("idnumber");
 let krapin = document.getElementById("krapin");
@@ -100,13 +100,13 @@ let nok_town = document.getElementById("nok_town");
 let nok_area = document.getElementById("w_town");
 let nok_tel = document.getElementById("nok_contact");
 
-let doc1 = document.getElementById("idphotoA");
-let doc2 = document.getElementById("idphotoB");
-let doc3 = document.getElementById("kraphoto");
+let file_2 = document.getElementById("idphotoA");
+let file_3 = document.getElementById("idphotoB");
+let file_4 = document.getElementById("kraphoto");
 
-let doc4 = document.getElementById("bimage_a");
-let doc5 = document.getElementById("bimage_b");
-let doc6 = document.getElementById("bimage_c");
+let file_5 = document.getElementById("bimage_a");
+let file_6 = document.getElementById("bimage_b");
+let file_7 = document.getElementById("bimage_c");
 
 let current_tab = 0; // Current Tab
 let current_form = document.getElementById("userform");
@@ -531,13 +531,13 @@ const compressimage = (nput, preview) => {
     };
   }
 };
-compressimage(imginput, "myprev");
-compressimage(doc1, "prev1");
-compressimage(doc2, "prev2");
-compressimage(doc3, "prev3");
-compressimage(doc4, "prev4");
-compressimage(doc5, "prev5");
-compressimage(doc6, "prev6");
+compressimage(file_1, "image_1");
+compressimage(file_2, "image_2");
+compressimage(file_3, "image_3");
+compressimage(file_4, "image_4");
+compressimage(file_5, "image_5");
+compressimage(file_6, "image_6");
+compressimage(file_7, "image_7");
 
 /*=====================
   Fetch Form Data
