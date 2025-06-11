@@ -74,7 +74,6 @@ let lastname = document.getElementById("lname");
 let dobirth = document.getElementById("dateob");
 let gender = document.getElementById("genda");
 let marital = document.getElementById("marital");
-let file_1 = document.getElementById("inputfile");
 
 let idnum = document.getElementById("idnumber");
 let krapin = document.getElementById("krapin");
@@ -100,13 +99,14 @@ let nok_town = document.getElementById("nok_town");
 let nok_area = document.getElementById("w_town");
 let nok_tel = document.getElementById("nok_contact");
 
+let file_1 = document.getElementById("inputfile");
 let file_2 = document.getElementById("idphotoA");
 let file_3 = document.getElementById("idphotoB");
 let file_4 = document.getElementById("kraphoto");
-
 let file_5 = document.getElementById("bimage_a");
 let file_6 = document.getElementById("bimage_b");
 let file_7 = document.getElementById("bimage_c");
+
 
 let current_tab = 0; // Current Tab
 let current_form = document.getElementById("userform");
@@ -115,6 +115,7 @@ let current_input = document.createElement("input");
 
 let dropdownlists = current_form.querySelectorAll(".dropdwn"); //selects all droplists
 let currentdropList = document.createElement("ul"); //  gets current droplists
+
 
 /*====================
 	Get Years List
