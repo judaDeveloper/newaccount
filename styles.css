@@ -484,8 +484,6 @@ input.invalid[type="button"] {
   border: 1px solid #cacaca;
 }
 .docs img{
-  width: 100%;
-  height: 100%;
   margin: auto;
   min-width: 90px;
   min-height: 100px;
