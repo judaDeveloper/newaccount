@@ -323,7 +323,6 @@ input.invalid[type="button"] {
 }
 
 
-
 .lb:focus-within .incon {
   border: none;
 }
@@ -340,16 +339,24 @@ input.invalid[type="button"] {
   color: #008cff;
   transform: translate3d(0, -35px, 0) scale(0.8);
 }
+
+.lb:not(:focus-within):has(.nput:not(:placeholder-shown)) {
+  border: 1px solid #008cff70;
+    background-color: #fff3f3;
+}
+
+
 /*.conts:has(.nput:not([type="file"]):focus) {
   background-color: #ffffff;
   border: 1px solid #008cffa9;
 }
 */
-
+/*
 .conts:has(.nput:not([type="file"])):focus-within {
   background-color: #ffffff;
   border: 1px solid #008cffa9;
 }
+
 
 .lb.txt:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod,
 .lb.drod:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod {
@@ -358,6 +365,7 @@ input.invalid[type="button"] {
 .lb.txtb:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod {
   transform: translate3d(0, -35px, 0) scale(0.8);
 }
+*/
 
 
 .dropdwn {
