@@ -817,7 +817,7 @@ function open_forms(fm) {
     }
   }
 }
-open_forms("");
+open_forms("userform");
 
 function toCurrency(value) {
   // ---------- Currency function
