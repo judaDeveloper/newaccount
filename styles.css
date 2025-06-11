@@ -126,7 +126,7 @@ Photo*/
 /*  width: 140px; */
   height: 150px;
   min-height: 150px;
-  border-radius: 6px;
+  border-radius: 5px;
   display: none;
 }
 .image img[src=""] {
@@ -139,10 +139,9 @@ Photo*/
   background-color: #0e9efd;
   content: url("https://judadeveloper.github.io/newaccount/photo.svg");
 }
-.image:has(img[src=""]) .image span{
+/*.image:has(img[src=""]) .image span{
   display: block;
 }
-/*Photo
 */
 
 .tab {
