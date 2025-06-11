@@ -16,6 +16,7 @@ body {
   margin: 0;
   height: 100vh;
   height: 100dvh;
+  display: grid; 
 }
 
 .main {
@@ -24,16 +25,14 @@ body {
   display: grid;
   padding: 20px 5px;
   /*min-height: fit-content;*/
-  background-color: #F0F8FF;
-  background: #0d0d0d;
-background: linear-gradient(90deg, rgba(13, 13, 13, 1) 0%, rgba(255, 255, 255, 1) 100%, rgba(171, 171, 171, 1) 100%);
+  background-color: #D3D3D3;
 }
 .container {
   width: 100%;
-  margin: auto;
   display: grid;
   max-width: 500px;
-  height: fit-content;
+  margin: 10px auto;
+  /*height: fit-content;*/
   border-radius: 6px;
   background-size: cover;
   grid-template-rows: 50px 1fr;
