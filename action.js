@@ -835,6 +835,13 @@ function addDays(date, days) {
   newDate.setDate(date.getDate() + days);
   return newDate;
 }
+let imagefiles = document.querySelectorAll(".imgfile");
+function getImages() {
+	alert(imagefiles.length);
+}
+
+getImages():
+
 
 /*
 
