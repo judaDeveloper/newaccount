@@ -72,7 +72,7 @@ body {
   display: none;
   background-color: #0000001a;
 }
-.forms #userform.shown {
+.forms:has(#userform.shown) {
   display: grid;
 }
 /*
