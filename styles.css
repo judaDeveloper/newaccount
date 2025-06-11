@@ -486,6 +486,10 @@ input.invalid[type="button"] {
   background-color: #ffffff;
   border: 1px solid #cacaca;
 }
+.docs .imgfile {
+  
+}
+
 
 /*
 .docs img{
@@ -502,6 +506,10 @@ input.invalid[type="button"] {
 }
 */
 
+.tab.conditions {
+  overflow-y: scroll;
+  height: calc(100% - 200px);
+}
 
 .submit {
   width: 100%;
