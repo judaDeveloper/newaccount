@@ -544,7 +544,7 @@ compressimage(file_7, "image_7");
 //let imagefiles = document.querySelectorAll(".imgfile");
 let fileinputs = document.querySelectorAll(".lb input[type='file']");
 fileinputs.forEach((input) => {
-  input.addEventListener("change", (e) => {
+  input.addEventListener("click", (e) => {
    let x = e.target.files[0];
      if (x) { 
 			 alert(fileinputs.length);
