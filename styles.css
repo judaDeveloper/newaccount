@@ -182,8 +182,7 @@ Photo*/
   display: grid;
   margin: 0px auto;
   column-gap: 2px;
-  /*max-width: 300px;*/
-  max-width: minmax(280px, 60%);
+  min-width: 260px;
   position: relative;
   border-radius: 5px;
   margin-bottom: 15px;
