@@ -23,7 +23,7 @@ body {
   width: 100%;
   height: 100%;
   display: grid;
-  padding: 20px 5px;
+  padding: 10px 5px;
   /*min-height: fit-content;*/
   background-color: #A8A8A8;
 }
@@ -31,8 +31,8 @@ body {
   width: 100%;
   display: none;
   max-width: 500px;
-  margin: 10px auto;
-  /*height: fit-content;*/
+  margin: 0px auto;
+  height: fit-content;
   border-radius: 6px;
   background-size: cover;
   grid-template-rows: 50px 1fr;
