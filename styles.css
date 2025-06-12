@@ -93,13 +93,14 @@ Photo*/
 }
 .image {
   padding: 8px;
-  display: none;
+  display: grid;
   margin: 0 auto;
   max-width: fit-content;
   position: relative;
   height: fit-content;
   border-radius: 6px;
   background-color: #00000035;
+ display: none
 }
 .image.shown {
   display: grid;
