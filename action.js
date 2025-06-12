@@ -843,7 +843,7 @@ function addDays(date, days) {
   return newDate;
 }
 let main_width = document.querySelector(".main").clientWidth;
-alert(main_width);
+//alert(main_width);
 if (main_width < 800) {
 main_width.classList.add("full");
 }
