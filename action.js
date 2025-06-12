@@ -842,10 +842,10 @@ function addDays(date, days) {
   newDate.setDate(date.getDate() + days);
   return newDate;
 }
-let main_width = document.querySelector(".main").clientWidth;
+let main_width = document.querySelector(".main");
 //alert(main_width);
-if (main_width < 800) {
-main_width.classList.add("full");
+if (main_width.clientWidth < 800) {
+  main_width.classList.add("full");
 }
 
 
