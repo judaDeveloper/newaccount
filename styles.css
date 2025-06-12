@@ -292,7 +292,10 @@ Photo*/
   transform: translate3d(0, -12px, 0) scale(0.8);
 }
 
-
+.txt:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod,
+.drod:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod {
+  transform: translate3d(0, -12px, 0) scale(0.8);
+}
 
 
 /*
@@ -368,19 +371,11 @@ input.invalid[type="button"] {
 }
 
 
-.lb.txt:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod,
-.lb.drod:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod {
-  transform: translate3d(0, -12px, 0) scale(0.8);
-}
+
 .lb.txtb:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod {
   transform: translate3d(0, -35px, 0) scale(0.8);
 }
 */
-.nput[type="button"]:not(:hover)[value]:not([value="DD"], [value="MM"], [value="YY"]) {
-  font-size: 7px;
-  color: #000000;
-  font-weight: bold;
-}
 
 
 .dropdwn {
