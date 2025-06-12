@@ -161,11 +161,10 @@ Photo*/
   display: grid;
 }
 .inputs {
-  /*max-width: 400px;*/
+  max-width: 80%;
   margin: 0px auto;
   min-height: 400px;
   border-radius: 5px;
-  width: minmax(280px, 60%);
   padding: 10px 10px 10px 10px;
   background-color: #00000000;
 }
@@ -184,7 +183,7 @@ Photo*/
   margin: 0px auto;
   column-gap: 2px;
   /*max-width: 300px;*/
-  width: minmax(280px, 60%);
+  max-width: minmax(280px, 60%);
   position: relative;
   border-radius: 5px;
   margin-bottom: 15px;
