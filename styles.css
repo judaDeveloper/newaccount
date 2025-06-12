@@ -190,6 +190,14 @@ Photo*/
   background-color: transparent;
   grid-template-columns: minmax(40px, 14%) 1fr;
 }
+.lb.xname {
+  grid-template-columns: minmax(40px, 14%) 1fr 1fr;
+}
+.lb.xname .conts {
+  width: 45%;
+  column-gap: 0%;
+  padding: 0px 5px 0px 10px;
+}
 
 .nput {
   height: 100%;
