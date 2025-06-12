@@ -297,7 +297,10 @@ Photo*/
   grid-template-columns: minmax(25px, 25%) minmax(25px, 25%) minmax(25px, 25%);
 }
 
-.lb:focus-within .pod { color: #008cff; }
+.lb:focus-within .pod { 
+  color: #008cff; 
+  transform: translate3d(0, -12px, 0) scale(0.8);
+}
 
 .txt:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod,
 .drod:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod {
