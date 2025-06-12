@@ -152,7 +152,7 @@ Photo*/
   display: grid;
 }
 .inputs {
-  width: 80%
+  width: 80%;
   min-width: 300px;
   margin: 0px auto;
   min-height: 400px;
