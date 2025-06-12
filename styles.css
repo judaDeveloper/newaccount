@@ -161,7 +161,8 @@ Photo*/
   display: grid;
 }
 .inputs {
-  max-width: 80%;
+  /*max-width: 80%;*/
+  width: minmax(300px, 60%);
   margin: 0px auto;
   min-height: 400px;
   border-radius: 5px;
