@@ -161,8 +161,7 @@ Photo*/
   display: grid;
 }
 .inputs {
-  width: 100%
-  max-width: 80%; 
+  width: 80%
   min-width: 300px;
   margin: 0px auto;
   min-height: 400px;
@@ -184,8 +183,8 @@ Photo*/
   display: grid;
   margin: 0px auto;
   column-gap: 2px;
-  min-width: 260px;
-  max-width: 300px;
+  min-width: 280px;
+  max-width: 320px;
   position: relative;
   border-radius: 5px;
   margin-bottom: 15px;
@@ -299,7 +298,6 @@ Photo*/
   grid-template-columns: minmax(25px, 25%) minmax(25px, 25%) minmax(25px, 25%);
 }
 
-
 .lb:focus-within .pod {
   color: #008cff;
   transform: translate3d(0, -12px, 0) scale(0.8);
@@ -309,6 +307,10 @@ Photo*/
 .drod:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod {
   transform: translate3d(0, -12px, 0) scale(0.8);
 }
+
+
+/*
+
 .lb:hover  {
   background-color: #c1e3ff;
 }
@@ -365,7 +367,6 @@ input.invalid[type="button"] {
     background-color: #fff3f3;
 }
 
-/*
 background-color: #eaf5ff;
 
 
