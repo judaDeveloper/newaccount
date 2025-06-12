@@ -40,6 +40,11 @@ body {
   background-color: #00a2ffb2;
   background-image: url("https://judadeveloper.github.io/newaccount/banner.png");
 }
+.main.full .container {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
 .container:has(#userform.shown) {
   display: grid;
 }
