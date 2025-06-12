@@ -23,8 +23,8 @@ body {
   width: 100%;
   height: 100%;
   display: grid;
+  height: fit-content;
   padding: 10px 5px;
-  /*min-height: fit-content;*/
   background-color: #A8A8A8;
 }
 .container {
@@ -39,6 +39,11 @@ body {
   background-repeat: no-repeat;
   background-color: #00a2ffb2;
   background-image: url("https://judadeveloper.github.io/newaccount/banner.png");
+}
+.main.full {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
 }
 .main.full .container {
   width: 100%;
