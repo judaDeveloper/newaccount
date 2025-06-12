@@ -548,7 +548,7 @@ background-color: #eaf5ff;
 }
 .submit button:first-of-type {
   opacity: 0;
-  width: 60px;
+  width: 80px;
   background-color: #ffffff;
 }
 .submit button:last-of-type {
