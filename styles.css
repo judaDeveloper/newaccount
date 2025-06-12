@@ -109,7 +109,7 @@ Photo*/
   height: fit-content;
   border-radius: 6px;
   background-color: #00000035;
- display: none
+  display: none
 }
 .image.shown {
   display: grid;
@@ -214,7 +214,7 @@ Photo*/
   padding: 0px 5px 0px 20px;
   grid-template-columns: 1fr;
   background-color: #ffffff;
-  border-left: 1px solid #dde5f0;
+  /*border-left: 1px solid #dde5f0;*/
 }
 .txtb .conts {
   min-height: 80px;
