@@ -741,7 +741,7 @@ const netxt_tab = (step) => {
     tab.innerText = "Terms & Conditions";
   }
 };
-netxt_tab(4);
+netxt_tab(0);
 
 /*=====================
   Validate Empty Inputs
