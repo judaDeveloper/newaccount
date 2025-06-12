@@ -165,6 +165,7 @@ Photo*/
   margin: 0px auto;
   min-height: 400px;
   border-radius: 5px;
+  width: minmax(280px, 60%);
   padding: 10px 10px 10px 10px;
   background-color: #00000000;
 }
@@ -195,7 +196,7 @@ Photo*/
   height: 100%;
   border-radius: 4px;
   padding: 15px 5px 5px 0px;
-  background-color:  #dde5f0;
+  background-color:  transparent
 }
 .nput[type="file"] {
   width: 0;
