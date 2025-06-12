@@ -162,7 +162,7 @@ Photo*/
 }
 .inputs {
   /*max-width: 80%;*/
-  width: minmax(300px, 40%);
+  width: min(300px, 40%);
   margin: 0px auto;
   min-height: 400px;
   border-radius: 5px;
