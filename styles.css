@@ -309,89 +309,6 @@ Photo*/
 }
 
 
-/*
-
-.lb:hover  {
-  background-color: #c1e3ff;
-}
-.lb:hover .incon {
-  background-color: #d4ecff00;
-  border-right: 1px solid #008cff;
-}
-.lb:hover .incon svg { fill: #008cff; }
-.lb:hover .pod { color: #008cff; }
-
-.lb:has(.nput.invalid):hover .incon  {
-  border: none;
-  background-color: #fff3f3;
-}
-.lb:has(.nput.invalid):hover svg { fill: #ff7373; }
-
-.lb:has(.nput.invalid) .conts {
-  border: 1px solid #ff686885;
-}
-.lb:has(.nput.invalid):focus-within .conts {
-  border: 1px solid #ff686885;
-}
-.lb:has(.nput.invalid:not([type="file"])) .pod {
-  color: #f86464;
-}
-
-.imge:has(.nput.invalid) .conts img {
-  background-color: #ff9f9f;
-}
-input.invalid[type="button"] {
-  color: #f86464;
-}
-
-
-.lb:focus-within .incon {
-  border: none;
-}
-.lb:focus-within .incon svg {
-  fill: #008cff;
-}
-
-.txt:focus-within .pod,
-.drod:focus-within .pod {
-  color: #008cff;
-  transform: translate3d(0, -12px, 0) scale(0.8);
-}
-.txtb:focus-within .pod {
-  color: #008cff;
-  transform: translate3d(0, -35px, 0) scale(0.8);
-}
-
-.lb:has(.nput:not(:placeholder-shown)):not(:focus-within) {
-  border: 1px solid #008cff70;
-    background-color: #fff3f3;
-}
-
-background-color: #eaf5ff;
-
-
-
-
-
-*/
-
-/*.conts:has(.nput:not([type="file"]):focus) {
-  background-color: #ffffff;
-  border: 1px solid #008cffa9;
-}
-*/
-/*
-.conts:has(.nput:not([type="file"])):focus-within {
-  background-color: #ffffff;
-  border: 1px solid #008cffa9;
-}
-
-
-
-.lb.txtb:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod {
-  transform: translate3d(0, -35px, 0) scale(0.8);
-}
-*/
 
 
 .dropdwn {
@@ -513,23 +430,6 @@ background-color: #eaf5ff;
 }
 
 
-
-/*
-.docs img{
-  margin: auto;
-  min-width: 90px;
-  min-height: 100px;
-  border-radius: 5px;
-}
-.docs img[src=""] {
-  width: 40px;
-  height: 40px;
-  margin: auto;
-  content: url("https://judadeveloper.github.io/newaccount/ximage.svg");
-}
-*/
-
-
 .submit {
   width: 100%;
   display: grid;
@@ -575,6 +475,105 @@ background-color: #eaf5ff;
   background-color: #ffececa4;
   border: 1px solid #ff1414;
 }
+
+/*
+.docs img{
+  margin: auto;
+  min-width: 90px;
+  min-height: 100px;
+  border-radius: 5px;
+}
+.docs img[src=""] {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  content: url("https://judadeveloper.github.io/newaccount/ximage.svg");
+}
+*/
+
+/*
+
+.lb:hover  {
+  background-color: #c1e3ff;
+}
+.lb:hover .incon {
+  background-color: #d4ecff00;
+  border-right: 1px solid #008cff;
+}
+.lb:hover .incon svg { fill: #008cff; }
+.lb:hover .pod { color: #008cff; }
+
+.lb:has(.nput.invalid):hover .incon  {
+  border: none;
+  background-color: #fff3f3;
+}
+.lb:has(.nput.invalid):hover svg { fill: #ff7373; }
+
+.lb:has(.nput.invalid) .conts {
+  border: 1px solid #ff686885;
+}
+.lb:has(.nput.invalid):focus-within .conts {
+  border: 1px solid #ff686885;
+}
+.lb:has(.nput.invalid:not([type="file"])) .pod {
+  color: #f86464;
+}
+
+.imge:has(.nput.invalid) .conts img {
+  background-color: #ff9f9f;
+}
+input.invalid[type="button"] {
+  color: #f86464;
+}
+
+
+.lb:focus-within .incon {
+  border: none;
+}
+.lb:focus-within .incon svg {
+  fill: #008cff;
+}
+
+.txt:focus-within .pod,
+.drod:focus-within .pod {
+  color: #008cff;
+  transform: translate3d(0, -12px, 0) scale(0.8);
+}
+.txtb:focus-within .pod {
+  color: #008cff;
+  transform: translate3d(0, -35px, 0) scale(0.8);
+}
+
+.lb:has(.nput:not(:placeholder-shown)):not(:focus-within) {
+  border: 1px solid #008cff70;
+    background-color: #fff3f3;
+}
+
+background-color: #eaf5ff;
+
+
+
+
+
+*/
+
+/*.conts:has(.nput:not([type="file"]):focus) {
+  background-color: #ffffff;
+  border: 1px solid #008cffa9;
+}
+*/
+/*
+.conts:has(.nput:not([type="file"])):focus-within {
+  background-color: #ffffff;
+  border: 1px solid #008cffa9;
+}
+
+
+
+.lb.txtb:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod {
+  transform: translate3d(0, -35px, 0) scale(0.8);
+}
+*/
 
 
 
