@@ -63,12 +63,6 @@ const fetchusers = () => {
 };
 fetchusers();
 
-let main_width = document.querySelector(".main")..clientWidth;
-alert(main_width);
-if (main_width < 800) {
-document.querySelector(".container").style.maxHeight = "100%";	
-}
-
 
 /*===================
   Client Form Inputs
@@ -715,7 +709,7 @@ const netxt_tab = (step) => {
   //stepIndicator(current_tab);
 
   let x = document.querySelectorAll(".submit button");
-  let photo = document.querySelector(".image");
+  let photo = document.querySelector("#userform .image");
 
   if (current_tab > 0) {
     x[0].classList.add("shown");
@@ -747,7 +741,7 @@ const netxt_tab = (step) => {
     tab.innerText = "Terms & Conditions";
   }
 };
-netxt_tab(4);
+netxt_tab(6);
 
 /*=====================
   Validate Empty Inputs
@@ -816,7 +810,7 @@ function open_forms(fm) {
       current_form = forms[i];
       current_form.classList.add("shown");
       current_form.reset();
-      netxt_tab(5);
+      netxt_tab(1);
     } else {
       forms[i].classList.remove("shown");
     }
@@ -848,6 +842,13 @@ function addDays(date, days) {
   newDate.setDate(date.getDate() + days);
   return newDate;
 }
+
+let main_width = document.querySelector(".main").clientWidth;
+alert(main_width);
+if (main_width < 800) {
+document.querySelector(".container").style.maxHeight = "100%";	
+}
+
 
 
 /*
