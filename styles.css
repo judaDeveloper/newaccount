@@ -175,7 +175,7 @@ Photo*/
   padding: 5px 5px;
   margin: 0px auto;
   width: minmax(280px, 60%);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600px;
 }
 .lb {
@@ -308,11 +308,6 @@ Photo*/
 .drod:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod {
   transform: translate3d(0, -12px, 0) scale(0.8);
 }
-
-
-/*
-background-color: #eaf5ff;
-
 .lb:hover  {
   background-color: #c1e3ff;
 }
@@ -322,7 +317,6 @@ background-color: #eaf5ff;
 }
 .lb:hover .incon svg { fill: #008cff; }
 .lb:hover .pod { color: #008cff; }
-
 
 .lb:has(.nput.invalid):hover .incon  {
   border: none;
@@ -369,6 +363,14 @@ input.invalid[type="button"] {
   border: 1px solid #008cff70;
     background-color: #fff3f3;
 }
+
+/*
+background-color: #eaf5ff;
+
+
+
+
+
 */
 
 /*.conts:has(.nput:not([type="file"]):focus) {
