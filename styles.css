@@ -301,6 +301,10 @@ Photo*/
   color: #008cff; 
   transform: translate3d(0, -12px, 0) scale(0.8);
 }
+.txtb:focus-within .pod { 
+  color: #008cff; 
+  transform: translate3d(0, -35px, 0) scale(0.8);
+}
 
 .txt:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod,
 .drod:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod {
