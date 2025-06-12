@@ -89,17 +89,16 @@ body {
 /*
 Photo*/
 .file {
-  margin: 10px auto;
   max-width: 300px;
+  margin: 10px auto;
   padding-bottom: 10px;
-  border-radius: 10px;
 }
 
-
 .file p{
+  padding: 10px; 
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
-  padding: 10px;
 }
 .image {
   padding: 8px;
@@ -174,8 +173,8 @@ Photo*/
 .tabname {
   padding: 5px 5px;
   margin: 0px auto;
-  max-width: 300px;
-  font-size: 20px;
+  width: minmax(280px, 60%);
+  font-size: 16px;
   font-weight: 600px;
 }
 .lb {
@@ -184,10 +183,10 @@ Photo*/
   margin: 0px auto;
   column-gap: 2px;
   /*max-width: 300px;*/
-  width: minmax(280px, 90%);
+  width: minmax(280px, 60%);
   position: relative;
   border-radius: 5px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   background-color: transparent;
   grid-template-columns: minmax(40px, 14%) 1fr;
 }
@@ -196,7 +195,7 @@ Photo*/
   height: 100%;
   border-radius: 4px;
   padding: 15px 5px 5px 0px;
-  background-color: transparent;
+  background-color:  #dde5f0;
 }
 .nput[type="file"] {
   width: 0;
