@@ -40,15 +40,7 @@ body {
   background-color: #00a2ffb2;
   background-image: url("https://judadeveloper.github.io/newaccount/banner.png");
 }
-.main.full {
-  width: 100%;
-  height: 100%;
-}
-.main.full .container {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-}
+
 .container:has(#userform.shown) {
   display: grid;
 }
@@ -494,6 +486,106 @@ Photo*/
   content: url("https://judadeveloper.github.io/newaccount/ximage.svg");
 }
 */
+.cbox label:hover {
+  color: #008cff;
+  font-weight: bold;
+}
+input[type="button"]:hover,
+input[type="checkbox"]:hover {
+  color: #008cff;
+  font-weight: bold;
+}
+input[type="checkbox"]:checked {
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+}
+
+
+/* Input Invalid
+*/
+
+.lbl:has(.nput:not([type="file"]).invalid) .conts {
+  border: 1px solid #ff686885;
+}
+.lbl:has(.nput.invalid:not([type=file])) .pod {
+  color: #f86464;
+}
+.lbl:has(.nput.invalid) .incon svg {
+  fill: #f86464;
+}
+.lbl:has(.nput.invalid[type="file"]) {
+  background-color: #ff686825;
+}
+
+/* Focus-Within & Input invalid
+*/
+
+.lbl:focus-within:has(.nput:not([type="file"]).invalid) .incon {
+  background-color: #ff9f9f;
+}
+.lbl:focus-within:has(.nput:not([type="file"]).invalid) .incon svg {
+  fill: #ffffff;
+}
+
+
+/*
+////////////^^^^^^^^^^^^^^^^^^^^^^^^^;;&
+*/
+/*.lbl:focus-within .nput:focus.invalid {
+  border: 1px solid #ffacaca6;
+}*/
+
+.imge:has(.nput.invalid) .conts img {
+  background-color: #ff9f9f;
+}
+
+input.invalid[type=button] {
+  color: #f86464;
+}
+
+
+
+.lbl:not(:focus-within):has(.nput:not(:placeholder-shown)) .incon {
+  background-color: #008cff30;
+}
+.lbl:not(:focus-within):has(.nput:not(:placeholder-shown)) .incon svg {
+  fill: #ffffff;
+}
+.lbl:not(:focus-within):has(.nput:not(:placeholder-shown)) .pod{
+  color: #757575;
+}
+.txt:not(:focus-within):has(.nput:not(:placeholder-shown)) .pod, 
+.drod:not(:focus-within):has(.nput:not(:placeholder-shown)) .pod {
+  transform: translate3d(0, -9px, 0) scale(0.78);
+}
+.txtb:not(:focus-within):has(.nput:not(:placeholder-shown)) .pod {
+  transform: translate3d(0, -20px, 0) scale(0.78);
+}
+.txt:not(:focus-within):has(.nput:not(:placeholder-shown)) .nput,
+.drod:not(:focus-within):has(.nput:not(:placeholder-shown)) .nput {
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+}
+.lbl:not(:focus-within):has(.nput:not(:placeholder-shown):not([type=file])) .conts{
+  border: 1px solid #008cff70;
+}
+#ff0000
+
+.lbl:not(:focus-within):has(.bxd1:not(:hover)[value="DD"]))) .conts,
+.lbl:not(:focus-within):has(.bxd2:not(:hover)[value="MM"]))) .conts, 
+.lbl:not(:focus-within):has(.bxd3:not(:hover)[value="YY"]))) .conts {
+  border: 1px solid #008cff70;
+}
+
+.bxd1:not(:hover)[value]:not([value="DD"]), 
+.bxd2:not(:hover)[value]:not([value="MM"]), 
+.bxd3:not(:hover)[value]:not([value="YY"]) {
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+}
 
 /*
 
