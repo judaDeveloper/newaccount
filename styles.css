@@ -482,9 +482,10 @@ input.invalid[type="button"] {
   padding: 5px;
   display: grid;
   margin: 0px auto;
-  max-width: 300px;
+  width: minmax(280px, 60%);
   border-radius: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+  height: fit-content;
   background-color: #ffffff80;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -493,8 +494,8 @@ input.invalid[type="button"] {
   padding: 0px;
   /*margin: auto;*/
   display: grid;
-  height: 100px;
-  min-width: 90px;
+  height: 120px;
+  min-width: 100px;
   border-radius: 5px;
   background-color: #ffffff;
   border: 1px solid #cacaca;
@@ -505,6 +506,7 @@ input.invalid[type="button"] {
   margin: auto;
   content: url("https://judadeveloper.github.io/newaccount/ximage.svg");
 }
+
 
 
 /*
