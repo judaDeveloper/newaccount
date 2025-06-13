@@ -537,7 +537,7 @@ compressimage(file_5, "image_5");
 compressimage(file_6, "image_6");
 compressimage(file_7, "image_7");
 
-//let imagefiles = document.querySelectorAll(".imgfile");
+/*//let imagefiles = document.querySelectorAll(".imgfile");
 let fileinputs = document.querySelectorAll(".lb input[type=file]");
 fileinputs.forEach((input) => {
   input.addEventListener("click", (e) => {
@@ -547,7 +547,7 @@ fileinputs.forEach((input) => {
      }
   });  
 });
-
+*/
 /*=====================
   Fetch Form Data
 -----------------------*/
