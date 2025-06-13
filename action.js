@@ -693,6 +693,7 @@ const stepIndicator = (index) => {
 };*/
 
 let tabs = current_form.querySelectorAll(".inputs .tab");
+
 const netxt_tab = (step) => {
   if (step > 0 && current_tab < 6) {
     current_tab = current_tab + step;
@@ -759,6 +760,14 @@ function validateEmpties(btn) {
       dobirth.classList.remove("invalid");
     }
   });
+	
+  if (file_1.files.length == 0) {
+    file_1.classList.add("invalid");
+    valid = false;
+    btn.classList.add("invalid");
+  } else {
+    file_1.classList.remove("invalid");
+  }
 
   for (let i = 0; i < x.length; i++) {
     if (x[i].value == "" || x[i].classList.contains("invalid")) {
@@ -777,13 +786,7 @@ function validateEmpties(btn) {
   }
 }
 
-/*  if (imginput.files.length == 0) {
-    imginput.classList.add("invalid");
-    valid = false;
-    btn.classList.add("invalid");
-  } else {
-    imginput.classList.remove("invalid");
-  } */
+/*   */
 
 
 /*
