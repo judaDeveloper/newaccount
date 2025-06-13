@@ -805,7 +805,8 @@ function submitnewClient() {
     });
 }
 
-let forms = document.querySelectorAll(".forms form");
+
+/*let forms = document.querySelectorAll(".forms form");
 function open_forms(fm) {
   for (let i = 0; i < forms.length; i++) {
     forms[i].classList.remove("shown");
@@ -820,6 +821,8 @@ function open_forms(fm) {
   }
 }
 open_forms("userform");
+*/
+
 
 function toCurrency(value) {
   // ---------- Currency function
