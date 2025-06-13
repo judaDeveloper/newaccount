@@ -148,6 +148,7 @@ Photo*/
 
 .tab {
   display: ttnone;
+  display: grid;
 }
 .tab.shown {
   display: grid;
