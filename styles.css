@@ -147,7 +147,7 @@ Photo*/
 }
 
 .tab {
-  display: none;
+  display: ttnone;
 }
 .tab.shown {
   display: grid;
