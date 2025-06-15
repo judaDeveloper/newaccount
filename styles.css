@@ -1,784 +1,534 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-  font-size: 13px;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  -moz-box-sizing: border-box;
-  font-family: Arial, sans-serif;
-  -webkit-box-sizing: border-box;
-}
-
-html,
-body {
-  margin: 0;
-  height: 100vh;
-  height: 100dvh;
-  display: grid; 
-}
-
-.main {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  height: fit-content;
-  padding: 5%;
-  background-color: #6699CC;
-}
-.container {
-  width: 100%;
-  display: none;
-  display: grid;
-  max-width: 500px;
-  margin: 0px auto;
-  height: fit-content;
-  border-radius: 8px;
-  background-size: cover;
-  grid-template-rows: 50px 1fr;
-  background-repeat: no-repeat;
-  background-color: #00a2ffb2;
-  background-image: url("https://judadeveloper.github.io/newaccount/banner.png");
-}
-
-.container:has(#userform.shown) {
-  display: grid;
-}
-
-.heada {
-  display: grid;
-  max-height: 50px;
-  padding: 5px 15px;
-  position: relative;
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 6px 6px 0px 0px;
-  grid-template-columns: 100px 1fr;
-}
-.heada img {
-  width: 100px;
-}
-.heada .xbtn {
-  top: 3px;
-  right: 3px;
-  width: 23px;
-  height: 23px;
-  fill: #919191;
-  position: absolute;
-  border-radius: 100%;
-}
-.forms {
-  display: grid;
-  grid-template-rows: 1fr 60px;
-}
-#userform {
-  width: 100%;
-  height: 100%;
-  background-color: #0000001a;
-}
-
-/*
-Photo*/
-.file {
-  max-width: 300px;
-  margin: 10px auto;
-  padding-bottom: 10px;
-}
-
-.file p{
-  padding: 10px; 
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-}
-.image {
-  padding: 8px;
-  display: grid;
-  margin: 0 auto;
-  max-width: fit-content;
-  position: relative;
-  height: fit-content;
-  border-radius: 6px;
-  background-color: #00000035;
-  display: none
-}
-.image.shown {
-  display: grid;
-}
-.image .conts{
-  padding: 0;
-  display: grid;
-  cursor: pointer;
-  margin: 0px auto;
-  min-width: 140px;
-  min-height: 150px;
-  position: relative;
-  width: fit-content;
-  height: fit-content;
-  border-radius: 6px;
-  justify-items: center;
-  background-color: #ffffff;
-}
-.image span{
-  left: 0;
-  top: 85%;
-  width: 100%;
-  color: #686868;
-  text-align: center;
-  position: absolute;
-}
-.image img {
-  width: 100%;
-  width: 140px;
-  height: 150px;
-  min-height: 150px;
-  border-radius: 5px;
-}
-.image img[src=""] {
-  width: 60px;
-  height: 60px;
-  margin: auto;
-  min-width: 40px;
-  min-height: 40px;
-  border-radius: 100%;
-  background-color: #0e9efd;
-  content: url("https://judadeveloper.github.io/newaccount/photo.svg");
-}
-
-.tab {
-  display: none;
-}
-.tab.shown {
-  display: grid;
-}
-.inputs {
-  width: 80%;
-  min-width: 300px;
-  margin: 0px auto;
-  min-height: 400px;
-  border-radius: 5px;
-  padding: 10px 10px 10px 10px;
-}
-/* Form Defaults
-*/
-.tabname {
-  padding: 5px 5px;
-  margin: 0px auto;
-  width: minmax(280px, 60%);
-  font-size: 17px;
-  font-weight: 600px;
-}
-.lb {
-  width: 100%;
-  display: grid;
-  margin: 0px auto;
-  column-gap: 2px;
-  min-width: 280px;
-  max-width: 320px;
-  position: relative;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  background-color: transparent;
-  grid-template-columns: minmax(40px, 14%) 1fr;
-}
-
-.nput {
-  height: 100%;
-  border-radius: 4px;
-  padding: 15px 5px 5px 0px;
-  background-color:  transparent
-}
-.nput[type="file"] {
-  width: 0;
-  height: 0;
-  opacity: 0;
-  position: absolute;
-}
-.conts {
-  width: 100%;
-  height: 55px;
-  display: grid;
-  column-gap: 5%;
-  border-radius: 4px;
-  position: relative;
-  padding: 0px 5px 0px 20px;
-  grid-template-columns: 1fr;
-  background-color: #ffffff;
-  border-left: 1px solid #dde5f0;
-}
-.txtb .conts {
-  min-height: 80px;
-}
-.incon {
-  display: grid;
-  border-radius: 5px 0px 0px 5px;
-  /*background-color: #000005;*/
-  background-color: #eaf5ff;
-}
-
-.incon svg {
-  width: 40%;
-  height: 40%;
-  margin: auto;
-  fill: #6d6d6d;
-  transform: scaleX(1);
-  transition: all 0.3s ease;
-}
-.pod {
-  left: 8%;
-  top: 18px;
-  font-size: 13x;
-  color: #777777;
-  position: absolute;
-  pointer-events: none;
-  transform-origin: 0 0;
-  transition: all 0.2s ease;
-  transform: translate3d(0, 0, 0);
-}
-.txtb .pod {
-  top: 40px;
-}
-.dob .pod,
-.cbox .pod {
-  top: 3px;
-  font-size: 12px;
-  pointer-events: none;
-}
-
-.dob .nput,
-.cbox .nput {
-  /*width: 0px;
-  height: 0px;
-  padding: 0;
-  font-size: 8px;
-  opacity: 0;
-  position: absolute;
-  background-color: #cc7272b7;*/
-}
-.dob input[type="button"] {
-  height: 26px;
-  cursor: pointer;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  border-radius: 2px;
-  background-color: #f2f3f3;
-}
-.cbox label {
-  display: grid;
-  cursor: pointer;
-  font-size: 14px;
-  align-items: center;
-  padding: 15px 0px 5px 3px;
-  grid-template-columns: 25px 1fr;
-}
-.cbox input[type="checkbox"] {
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-}
-.cbox .conts {
-  grid-template-columns: minmax(25px, 35%) 1fr;
-}
-.cbox:has(#w_status) .conts {
-  grid-template-columns: minmax(25px, 40%) 1fr;
-}
-.dob .conts {
-  column-gap: 3%;
-  padding-top: 5px;
-  grid-template-columns: minmax(25px, 25%) minmax(25px, 25%) minmax(25px, 25%);
-}
-
-.lb:focus-within .pod { 
-  color: #008cff; 
-  transform: translate3d(0, -12px, 0) scale(0.8);
-}
-.txtb:focus-within .pod { 
-  color: #008cff; 
-  transform: translate3d(0, -35px, 0) scale(0.8);
-}
-
-.txt:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod,
-.drod:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod {
-  transform: translate3d(0, -12px, 0) scale(0.8);
-}
-.txtb:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod {
-  transform: translate3d(0, -35px, 0) scale(0.8);
-}
-
-
-
-.dropdwn {
-  top: 42px;
-  left: 60px;
-  z-index: 999;
-  display: none;
-  min-height: 50px;
-  max-width: 230px;
-  overflow-y: auto;
-  max-height: 150px;
-  position: absolute;
-  list-style-type: none;
-  width: calc(100% - 65px);
-  background-color: #fdfdfd;
-  border: 1px solid #b8b8b842;
-  transform-origin: top center;
-  animation: growdown 200ms ease-in-out forwards;
-  box-shadow: 0 26px 58px 0 #00000038, 0 5px 14px 0 #0000002e;
-}
-
-.dropdwn li {
-  width: 100%;
-  height: 40px;
-  cursor: pointer;
-  font-size: 15px;
-  color: #1a1a1a;
-  border-radius: 4px;
-  background-color: #ffffff;
-}
-.dropdwn li p {
-  height: 40px;
-  display: grid;
-  text-align: center;
-  align-items: center;
-  padding: 5px 10px;
-  border-bottom: 1px solid #eeeeee;
-}
-
-.dropdwn li:hover {
-  color: #ffffff;
-  font-weight: bold;
-  background-color: #008cff;
-}
-
-@-moz-keyframes growdown {
-  0% {
-    transform: scaleY(0);
-  }
-  80% {
-    transform: scaleY(1.1);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-@-webkit-keyframes growdown {
-  0% {
-    transform: scaleY(0);
-  }
-  80% {
-    transform: scaleY(1.1);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-@-o-keyframes growdown {
-  0% {
-    transform: scaleY(0);
-  }
-  80% {
-    transform: scaleY(1.1);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-@keyframes growdown {
-  0% {
-    transform: scaleY(0);
-  }
-  80% {
-    transform: scaleY(1.1);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-
-.docs {
-  gap: 10px;
-  padding: 5px;
-  display: grid;
-  margin: 0px auto;
-  width: minmax(280px, 60%);
-  border-radius: 4px;
-  margin-bottom: 15px;
-  height: fit-content;
-  background-color: #ffffff80;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.docs .conts {
-  width: 100%;
-  padding: 0px;
-  /*margin: auto;*/
-  display: grid;
-  height: 120px;
-  min-width: 100px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  border: 1px solid #cacaca;
-}
-.docs .imgfile[src=""] {
-  width: 40px;
-  height: 40px;
-  margin: auto;
-  content: url("https://judadeveloper.github.io/newaccount/ximage.svg");
-}
-
-
-.submit {
-  width: 100%;
-  display: grid;
-  margin: 0px auto;
-  align-content: center;
-  justify-content: center;
-  background-color: #ffffffc2;
-  border-radius: 0px 0px 6px 6px;
-  grid-template-columns: minmax(60px, 100px) 80px minmax(80px, 120px);
-}
-.submit button {
-  height: 45px;
-  width: 100%;
-  cursor: pointer;
-  color: #242424;
-  font-weight: 400;
-  border-radius: 4px;
-}
-.submit button:first-of-type {
-  opacity: 0;
-  width: 80px;
-  background-color: #ffffff;
-}
-.submit button:last-of-type {
-  color: #ffffff;
-  font-weight: 600;
-  background-color: #23a7ff;
-}
-.submit button.shown {
-  opacity: 1;
-  pointer-events: visible;
-}
-.submit button:first-of-type:hover {
-  color: #ff0000;
-  background-color: #ffceceaf;
-}
-.submit button:last-of-type:hover {
-  font-weight: 700;
-  background-color: #008cff;
-}
-.submit:has(button.invalid):focus-within button.invalid {
-  color: #ff1414;
-  background-color: #ffececa4;
-  border: 1px solid #ff1414;
-}
-
-/*
-.docs img{
-  margin: auto;
-  min-width: 90px;
-  min-height: 100px;
-  border-radius: 5px;
-}
-.docs img[src=""] {
-  width: 40px;
-  height: 40px;
-  margin: auto;
-  content: url("https://judadeveloper.github.io/newaccount/ximage.svg");
-}
-*/
-.cbox label:hover {
-  color: #008cff;
-  font-weight: bold;
-}
-input[type="button"]:hover,
-input[type="checkbox"]:hover {
-  color: #008cff;
-  font-weight: bold;
-}
-input[type="checkbox"]:checked {
-  font-size: 14px;
-  color: #000000;
-  font-weight: bold;
-}
-
-
-/* Input Invalid
-*/
-
-.lbl:has(.nput:not([type="file"]).invalid) .conts {
-  border: 1px solid #ff686885;
-}
-.lbl:has(.nput.invalid:not([type=file])) .pod {
-  color: #f86464;
-}
-.lbl:has(.nput.invalid) .incon svg {
-  fill: #f86464;
-}
-.lbl:has(.nput.invalid[type="file"]) {
-  background-color: #ff686825;
-}
-
-/* Focus-Within & Input invalid
-*/
-
-.lbl:focus-within:has(.nput:not([type="file"]).invalid) .incon {
-  background-color: #ff9f9f;
-}
-.lbl:focus-within:has(.nput:not([type="file"]).invalid) .incon svg {
-  fill: #ffffff;
-}
-
-
-/*
-////////////^^^^^^^^^^^^^^^^^^^^^^^^^;;&
-*/
-/*.lbl:focus-within .nput:focus.invalid {
-  border: 1px solid #ffacaca6;
-}*/
-
-.imge:has(.nput.invalid) .conts img {
-  background-color: #ff9f9f;
-}
-
-input.invalid[type=button] {
-  color: #f86464;
-}
-
-
-
-.lbl:not(:focus-within):has(.nput:not(:placeholder-shown)) .incon {
-  background-color: #008cff30;
-}
-.lbl:not(:focus-within):has(.nput:not(:placeholder-shown)) .incon svg {
-  fill: #ffffff;
-}
-.lbl:not(:focus-within):has(.nput:not(:placeholder-shown)) .pod{
-  color: #757575;
-}
-.txt:not(:focus-within):has(.nput:not(:placeholder-shown)) .pod, 
-.drod:not(:focus-within):has(.nput:not(:placeholder-shown)) .pod {
-  transform: translate3d(0, -9px, 0) scale(0.78);
-}
-.txtb:not(:focus-within):has(.nput:not(:placeholder-shown)) .pod {
-  transform: translate3d(0, -20px, 0) scale(0.78);
-}
-.txt:not(:focus-within):has(.nput:not(:placeholder-shown)) .nput,
-.drod:not(:focus-within):has(.nput:not(:placeholder-shown)) .nput {
-  font-size: 14px;
-  color: #000000;
-  font-weight: bold;
-}
-.lbl:not(:focus-within):has(.nput:not(:placeholder-shown):not([type=file])) .conts{
-  border: 1px solid #008cff70;
-}
-#ff0000
-
-.lbl:not(:focus-within):has(.bxd1:not(:hover)[value="DD"]))) .conts,
-.lbl:not(:focus-within):has(.bxd2:not(:hover)[value="MM"]))) .conts, 
-.lbl:not(:focus-within):has(.bxd3:not(:hover)[value="YY"]))) .conts {
-  border: 1px solid #008cff70;
-}
-
-.bxd1:not(:hover)[value]:not([value="DD"]), 
-.bxd2:not(:hover)[value]:not([value="MM"]), 
-.bxd3:not(:hover)[value]:not([value="YY"]) {
-  font-size: 14px;
-  color: #000000;
-  font-weight: bold;
-}
-
-/*
-
-.lb:hover  {
-  background-color: #c1e3ff;
-}
-.lb:hover .incon {
-  background-color: #d4ecff00;
-  border-right: 1px solid #008cff;
-}
-.lb:hover .incon svg { fill: #008cff; }
-.lb:hover .pod { color: #008cff; }
-
-.lb:has(.nput.invalid):hover .incon  {
-  border: none;
-  background-color: #fff3f3;
-}
-.lb:has(.nput.invalid):hover svg { fill: #ff7373; }
-
-.lb:has(.nput.invalid) .conts {
-  border: 1px solid #ff686885;
-}
-.lb:has(.nput.invalid):focus-within .conts {
-  border: 1px solid #ff686885;
-}
-.lb:has(.nput.invalid:not([type="file"])) .pod {
-  color: #f86464;
-}
-
-.imge:has(.nput.invalid) .conts img {
-  background-color: #ff9f9f;
-}
-input.invalid[type="button"] {
-  color: #f86464;
-}
-
-
-.lb:focus-within .incon {
-  border: none;
-}
-.lb:focus-within .incon svg {
-  fill: #008cff;
-}
-
-.txt:focus-within .pod,
-.drod:focus-within .pod {
-  color: #008cff;
-  transform: translate3d(0, -12px, 0) scale(0.8);
-}
-.txtb:focus-within .pod {
-  color: #008cff;
-  transform: translate3d(0, -35px, 0) scale(0.8);
-}
-
-.lb:has(.nput:not(:placeholder-shown)):not(:focus-within) {
-  border: 1px solid #008cff70;
-    background-color: #fff3f3;
-}
-
-background-color: #eaf5ff;
-
-
-
-
-
-*/
-
-/*.conts:has(.nput:not([type="file"]):focus) {
-  background-color: #ffffff;
-  border: 1px solid #008cffa9;
-}
-*/
-/*
-.conts:has(.nput:not([type="file"])):focus-within {
-  background-color: #ffffff;
-  border: 1px solid #008cffa9;
-}
-
-
-
-
-*/
-
-
-
-/*
-
-
-
-.image:has(.nput[type="file"]value = []).image .conts:hover img {
-    scale: 105%;
-  }
-
-
-  .image .pod {
-    top: 110%;
-    width: 95%;
-    height: 28px;
-    padding: 5px 5px;
-    text-align: center;
-    position: absolute;
-    border-radius: 3px;
-    background-color: #f3f3f3;
-  }
-  .image .conts:hover {
-    background-color: #fcfcfcd0;
-    border: 1px solid #008cff8e;
-  }
-
-.pic {
-    display: flex;
-    padding: 10px;
-    margin: 10px auto;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 14px;
-    align-content: center;
-    justify-items: center;
-    justify-content: center;
-    background-color: #00000011;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -moz-box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    -webkit-box-sizing: border-box;
   }
   
-  .pic .conts {
+  html,
+  body {
+    margin: 0;
+    height: 100vh;
+    height: 100dvh;
+    display: grid; 
+  }
+  
+  .main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    height: fit-content;
+    padding: 5%;
+    background-color: #6699CC;
+  }
+  .container {
+    width: 100%;
+    display: none;
+    display: grid;
+    max-width: 500px;
+    margin: 0px auto;
+    height: fit-content;
+    border-radius: 8px;
+    background-size: cover;
+    grid-template-rows: 50px 1fr;
+    background-repeat: no-repeat;
+    background-color: #00a2ffb2;
+    background-image: url("https://judadeveloper.github.io/newaccount/banner.png");
+  }
+  
+  .container:has(#userform.shown) {
+    display: grid;
+  }
+  
+  .heada {
+    display: grid;
+    max-height: 50px;
+    padding: 5px 15px;
+    position: relative;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 6px 6px 0px 0px;
+    grid-template-columns: 100px 1fr;
+  }
+  .heada img {
+    width: 100px;
+  }
+  .heada .xbtn {
+    top: 3px;
+    right: 3px;
+    width: 23px;
+    height: 23px;
+    fill: #919191;
+    position: absolute;
+    border-radius: 100%;
+  }
+  .forms {
+    display: grid;
+    grid-template-rows: 1fr 60px;
+  }
+  #userform {
+    width: 100%;
+    height: 100%;
+    background-color: #0000001a;
+  }
+  
+    
+  @-moz-keyframes growdown {
+    0% {
+      transform: scaleY(0);
+    }
+    80% {
+      transform: scaleY(1.1);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  @-webkit-keyframes growdown {
+    0% {
+      transform: scaleY(0);
+    }
+    80% {
+      transform: scaleY(1.1);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  @-o-keyframes growdown {
+    0% {
+      transform: scaleY(0);
+    }
+    80% {
+      transform: scaleY(1.1);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  @keyframes growdown {
+    0% {
+      transform: scaleY(0);
+    }
+    80% {
+      transform: scaleY(1.1);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+
+  .tab {
+    display: none;
+  }
+  .tab.shown {
+    display: grid;
+  }
+
+  .inputs {
+    width: 80%;
+    padding: 10px;
+    margin: 0px auto;
+    max-width: 360px;
+    min-width: 300px;
+    min-height: 400px;
+  }
+
+  .inputs h1 {
+    padding: 5px 5px;
+    margin: 0px auto;
+    max-width: 320px;
+    font-size: 17px;
+    font-weight: 600px;
+  }
+  .lb {
+    width: 100%;
+    display: grid;
+    margin: 0px auto;
+    column-gap: 2px;
+    min-width: 280px;
+    max-width: 320px;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    grid-template-columns: minmax(40px, 14%) 1fr;
+  }
+  
+  .nput {
+    height: 100%;
+    border-radius: 4px;
+    padding: 15px 5px 5px 5px;
+    background-color:  transparent
+  }
+  .content {
+    width: 100%;
+    height: 55px;
+    display: grid;
+    column-gap: 5%;
+    border-radius: 4px;
+    position: relative;
+    padding: 0px 0px 0px 20px;
+    grid-template-columns: 1fr;
+    background-color: #ffffff;
+  }
+  .incon {
+    display: grid;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #eaf5ff;
+    background-color: #ffffff5d;
+  }
+  .incon svg {
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    fill: #6d6d6d;
+    transform: scaleX(1);
+    transition: all 0.3s ease;
+  }
+  .pod {
+    left: 8%;
+    font-size: 13px;
+    color: #777777;
+    position: absolute;
+    pointer-events: none;
+    transform-origin: 0 0;
+    transition: all 0.2s ease;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .txt .pod { top: 38%; }
+  .dob .pod { top: 3px; }
+  .cbox .pod { top: 3px; }
+  .option .pod { top: 4px; }
+
+  .photo {
+    max-width: 360px;
+    margin: 10px auto;
+    padding-bottom: 10px;
+  }
+  .photo h1{
+    padding: 15px; 
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .image {
+    padding: 8px;
+    display: grid;
+    margin: 0 auto;
+    max-width: fit-content;
+    position: relative;
+    height: fit-content;
+    border-radius: 6px;
+    background-color: #ffffff5d;
+    display: none
+  }
+  .image.shown {
+    display: grid;
+  }
+  .image .content{
     padding: 0;
+    display: grid;
     cursor: pointer;
     margin: 0px auto;
     min-width: 140px;
-    min-height: 160px;
-    justify-items: center;
+    min-height: 150px;
+    position: relative;
     width: fit-content;
     height: fit-content;
-    border-radius: 8px;
-  }
-  
-  .pic img {
-    margin: auto;
-    min-width: 100px;
-    min-height: 100px;
     border-radius: 6px;
+    justify-items: center;
+    background-color: #ffffff;
   }
-  
-  .pic img[src=""] {
-    width: 60px;
-    height: 60px;
-    min-width: 40px;
-    min-height: 40px;
-    border-radius: 100%;
-    background-color: #24a8ff;
-    content: url("user_white.svg");
-  }
-  .pic .nput {
+  .nput[type="file"] {
     width: 0;
     height: 0;
     opacity: 0;
     position: absolute;
   }
-  .pic .pod {
+  .image span{
     left: 0;
-    top: 110%;
+    top: 85%;
     width: 100%;
-    height: 30px;
-    padding: 5px 5px;
+    color: #686868;
+    text-align: center;
     position: absolute;
-    display: none;
+  }
+  .image img {
+    width: 100%;
+    width: 140px;
+    height: 150px;
+    min-height: 150px;
     border-radius: 5px;
-    background-color: #ffffff;
   }
-  .pic:has(.nput:valid) #uploder {
-    display: block;
-    
-  }
-  .pic.shown {
-    display: flex;
-  }
-  #uploder {
-    top: 105%;
-    height: 28px;
-    padding: 5px;
-    width: 150px;
-    display: nrone;
-    cursor: pointer;
-    border-radius: 4px;
-    position: absolute;
-    background-color: #ffffff;
-  }
-  
-  .pic .conts:hover {
-    background-color: #fcfcfcd0;
-    border: 1px solid #008cff8e;
-  }
-  .pic .conts:hover img {
-    scale: 105%;
+  .image img[src=""] {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 100%;
+    background-color: #0e9efd;
+    content: url("https://judadeveloper.github.io/newaccount/photo.svg");
   }
 
+.txt:has(textarea) { 
+    min-height: 90px; 
+}
+.txt textarea { 
+    padding: 25px 0px 0px 3px;
+}
+.option select {
+    margin: 10px 5px 2px 2px;
+    background-color: #00000000;
+}
+.docs img {
+    width: 100%; height: 100%;
+}
+
+
+
+
+  .dob .nput,
+  .cbox .nput {
+    /*width: 0px;
+    height: 0px;
+    padding: 0;
+    font-size: 8px;
+    opacity: 0;
+    position: absolute;
+    background-color: #cc7272b7;*/
+  }
+
+
+ 
+  .cbox label {
+    display: grid;
+    cursor: pointer;
+    font-size: 14px;
+    align-items: center;
+    padding: 15px 0px 5px 3px;
+    grid-template-columns: 25px 1fr;
+  }
+  .cbox input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+  .cbox {
+    grid-template-columns: minmax(25px, 30%) 1fr;
+  }
+  .cbox:has(#w_status)  {
+    grid-template-columns: minmax(25px, 38%) 1fr;
+  }
+
+  .dob input[type="button"] {
+    height: 25px;
+    cursor: pointer;
+    margin-top: 16px;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+  }
+
+  .dob {
+    column-gap: 2%;
+    padding-top: 10px;
+    grid-template-columns: minmax(25px, 22%) minmax(25px, 22%) minmax(25px, 22%);
+  }
+
+  .lb:has(.docs) .incon {
+    font-size: 12px;
+    text-align: center;
+    background-color: #ffffff00;
+  }
+  .docs {
+    padding: 3px;
+    height: fit-content;
+    background-color: #ffffff27;
+  }
+  .docs .dtem {
+    display: grid;
+    column-gap: 1%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+ 
+  .docs .dtem label {
+    height: 90px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+
+  .docsf {
+    gap: 10px;
+    padding: 5px;
+    display: grid;
+    margin: 0px auto;
+    width: minmax(280px, 60%);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    height: fit-content;
+    background-color: #ffffff80;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .docs .content {
+    width: 100%;
+    padding: 0px;
+    /*margin: auto;*/
+    display: grid;
+    height: 120px;
+    min-width: 100px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #cacaca;
+  }
+  .docs .imgfile[src=""] {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    content: url("https://judadeveloper.github.io/newaccount/ximage.svg");
+  }
+
+/* Input Focused
+*/
+  .txt:focus-within .pod { 
+    color: #008cff; 
+    transform: translate3d(0, -100%, 0) scale(0.9);
+  }
+  .txt:has(textarea):focus-within .pod { 
+    transform: translate3d(0, -180%, 0) scale(0.9);
+  }
+
+/* Input not Empty
+*/
+.txt:focus-within .pod { 
+    color: #008cff; 
+    transform: translate3d(0, -100%, 0) scale(0.9);
+  }
+  .txt:not(:focus-within):has(.nput:not(:placeholder-shown)) .pod {
+    transform: translate3d(0, -100%, 0) scale(0.9);
+  }
+  .txt:not(:focus-within):has(textarea):has(.nput:not(:placeholder-shown)) .pod { 
+    transform: translate3d(0, -180%, 0) scale(0.9);
+  }
+
+
+
+    /*
+  .txtb:focus-within .pod { 
+    color: #008cff; 
+    transform: translate3d(0, -35px, 0) scale(0.8);
+  }
+  
+  .txt:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod,
+  .drod:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod {
+    transform: translate3d(0, -12px, 0) scale(0.8);
+  }
+  .txtb:has(.nput:not(:placeholder-shown)):not(:focus-within) .pod {
+    transform: translate3d(0, -35px, 0) scale(0.8);
+  }
   */
+  
+  
+  .dropdwn {
+    top: 42px;
+    left: 60px;
+    z-index: 999;
+    display: none;
+    min-height: 50px;
+    max-width: 230px;
+    overflow-y: auto;
+    max-height: 150px;
+    position: absolute;
+    list-style-type: none;
+    width: calc(100% - 65px);
+    background-color: #fdfdfd;
+    border: 1px solid #b8b8b842;
+    transform-origin: top center;
+    animation: growdown 200ms ease-in-out forwards;
+    box-shadow: 0 26px 58px 0 #00000038, 0 5px 14px 0 #0000002e;
+  }
+  
+  .dropdwn li {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #1a1a1a;
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+  .dropdwn li p {
+    height: 40px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    padding: 5px 10px;
+    border-bottom: 1px solid #eeeeee;
+  }
+  
+  .dropdwn li:hover {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #008cff;
+  }
+
+
+  .submit {
+    width: 100%;
+    display: grid;
+    margin: 0px auto;
+    align-content: center;
+    justify-content: center;
+    background-color: #ffffffc2;
+    border-radius: 0px 0px 6px 6px;
+    grid-template-columns: minmax(60px, 100px) 80px minmax(80px, 140px);
+  }
+  .submit button {
+    height: 45px;
+    width: 100%;
+    cursor: pointer;
+    color: #242424;
+    font-weight: 400;
+    border-radius: 4px;
+  }
+  .submit button:first-of-type {
+    opacity: 0;
+    width: 80px;
+    background-color: #ffffff;
+  }
+  .submit button:last-of-type {
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #23a7ff;
+  }
+  .submit button.shown {
+    opacity: 1;
+    pointer-events: visible;
+  }
+  .submit button:first-of-type:hover {
+    color: #ff0000;
+    background-color: #ffceceaf;
+  }
+  .submit button:last-of-type:hover {
+    font-weight: 700;
+    background-color: #008cff;
+  }
+  .submit:has(button.invalid):focus-within button.invalid {
+    color: #ff1414;
+    background-color: #ffececa4;
+    border: 1px solid #ff1414;
+  }
+  
+  
+  
+  
