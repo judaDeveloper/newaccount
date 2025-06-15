@@ -15,8 +15,8 @@ const db = firebase.firestore();
 const auth = firebase.auth();
 
 /*==================
-START fs_setup_cache
-=====================*/
+  START fs_setup_cache
+  =====================*/
 firebase.firestore().settings({
   cacheSizeBytes: firebase.firestore.CACHE_SIZE_UNLIMITED,
 });
@@ -30,8 +30,8 @@ firebase.initializeApp(
 );
 
 /*===================
-initialize_persistence
-======================*/
+  initialize_persistence
+  ======================*/
 firebase
   .firestore()
   .enablePersistence()
@@ -48,8 +48,8 @@ var appdata = {
 };
 
 /* ===========
-FETCH USERS
-==============*/
+  FETCH USERS
+  ==============*/
 const fetchusers = () => {
   let obj = {};
   db.collection("cc_userdata")
@@ -63,10 +63,9 @@ const fetchusers = () => {
 };
 fetchusers();
 
-
 /*===================
-  Client Form Inputs
----------------------*/
+    Client Form Inputs
+  ---------------------*/
 let firstname = document.getElementById("fname");
 let secondname = document.getElementById("sname");
 let lastname = document.getElementById("lname");
@@ -84,7 +83,7 @@ let county = document.getElementById("county");
 let currtown = document.getElementById("town");
 let subcounty = document.getElementById("subcounty");
 let sublocation = document.getElementById("sublocation");
-let physicaladdrss = document.getElementById("physicaladdrss");
+let physical_address = document.getElementById("physical_address");
 
 let w_status = document.getElementById("w_status");
 let w_name = document.getElementById("w_name");
@@ -106,7 +105,6 @@ let file_5 = document.getElementById("bimage_a");
 let file_6 = document.getElementById("bimage_b");
 let file_7 = document.getElementById("bimage_c");
 
-
 let current_tab = 0; // Current Tab
 let current_form = document.getElementById("userform");
 let all_inputs = current_form.querySelectorAll(".tab .nput");
@@ -115,10 +113,9 @@ let current_input = document.createElement("input");
 let dropdownlists = current_form.querySelectorAll(".dropdwn"); //selects all droplists
 let currentdropList = document.createElement("ul"); //  gets current droplists
 
-
 /*====================
-	Get Years List
-----------------------*/
+      Get Years List
+  ----------------------*/
 let yearOfFset = 55;
 const getYears = (Year) => {
   let yrs = [];
@@ -128,8 +125,8 @@ const getYears = (Year) => {
   return yrs;
 };
 /*====================
-	Get Days List
-----------------------*/
+      Get Days List
+  ----------------------*/
 const getmonthDays = (mon, yr) => {
   let list = [];
   let d = new Date(yr, mon, 0).getDate();
@@ -140,8 +137,8 @@ const getmonthDays = (mon, yr) => {
 };
 
 /*====================
-	Age Calculator
-----------------------*/
+      Age Calculator
+  ----------------------*/
 const CalculatorAge = (dt) => {
   let userdate = dt;
   let dob = new Date(userdate);
@@ -156,8 +153,8 @@ const CalculatorAge = (dt) => {
   }
 };
 /*====================
-	Validate Number Input
-----------------------*/
+      Validate Number Input
+  ----------------------*/
 function validatenumber(evt) {
   var theEvent = evt || window.event;
   if (theEvent.type === "paste") {
@@ -174,8 +171,8 @@ function validatenumber(evt) {
 }
 
 /*====================
-	CheckBox Function
-----------------------*/
+      CheckBox Function
+  ----------------------*/
 function onecheckBox(cbox) {
   let id = cbox.id;
   let x = document.getElementsByName(cbox.name);
@@ -197,8 +194,8 @@ function onecheckBox(cbox) {
 }
 
 /*====================
-	GET Random Numbers
-----------------------*/
+      GET Random Numbers
+  ----------------------*/
 function RandomNumber(min, max) {
   var minn = Math.ceil(min);
   var maxx = Math.floor(max);
@@ -206,8 +203,8 @@ function RandomNumber(min, max) {
 }
 
 /*====================
-	 Months List
-----------------------*/
+       Months List
+  ----------------------*/
 let monthlist = [
   "Jan",
   "Feb",
@@ -224,8 +221,8 @@ let monthlist = [
 ];
 
 /*====================
-	 Fetch Data Lists
-----------------------*/
+       Fetch Data Lists
+  ----------------------*/
 const getListdata = (list) => {
   let x = [];
   if (list == "days") {
@@ -312,8 +309,8 @@ const getListdata = (list) => {
 };
 
 /*====================
- Dropdown Static Data
-----------------------*/
+   Dropdown Static Data
+  ----------------------*/
 let staticInputs = document.querySelectorAll(
   "#county, #town, #subcounty, #sublocation, #w_type, #w_town, #nok_town, #nok_relation"
 );
@@ -333,8 +330,8 @@ staticInputs.forEach((input) => {
 });
 
 /*====================
- Dropdown Dynamic Data
-----------------------*/
+   Dropdown Dynamic Data
+  ----------------------*/
 const dynamicData = (input, list) => {
   if (input.id) {
     let x = getListdata(input.id); // use input id to filter data
@@ -350,8 +347,8 @@ const dynamicData = (input, list) => {
 };
 
 /*====================
- Form Inputs Clicked
-----------------------*/
+   Form Inputs Clicked
+  ----------------------*/
 function newposition(input) {
   let ol = input.offsetLeft;
   let ow = input.offsetWidth;
@@ -378,7 +375,7 @@ function showHide(disp) {
     currentdropList.style.display = "none";
   }
 }
-
+/*
 all_inputs.forEach((input) => {
   // show dropdown lists
   input.addEventListener("click", function () {
@@ -390,11 +387,12 @@ all_inputs.forEach((input) => {
     }
   });
 });
+*/
 
 /*
-/*===============================
- Close dropLists on window click
---------------------------------*/
+  /*===============================
+   Close dropLists on window click
+  --------------------------------*/
 window.addEventListener("mouseup", function (e) {
   dropdownlists.forEach((item) => {
     if (!e.target.closest(".dropdwn") && !(e.target == current_input)) {
@@ -404,8 +402,8 @@ window.addEventListener("mouseup", function (e) {
 });
 
 /*====================
- Dates Inputs
-----------------------*/
+   Dates Inputs
+  ----------------------*/
 let days = document.getElementById("days");
 let months = document.getElementById("months");
 let years = document.getElementById("years");
@@ -441,8 +439,8 @@ function fetchdates(dx, mx, yx) {
 fetchdates(days, months, years);
 
 /*====================
- Dates Inputs Clicked
-----------------------*/
+   Dates Inputs Clicked
+  ----------------------*/
 let dateinputs = document.querySelectorAll("#days, #months, #years");
 dateinputs.forEach((nput) => {
   nput.addEventListener("click", function () {
@@ -463,8 +461,8 @@ dateinputs.forEach((nput) => {
 });
 
 /*==============================
- Vissible Dropdown List Clicked
--------------------------------*/
+   Vissible Dropdown List Clicked
+  -------------------------------*/
 dropdownlists.forEach((item) => {
   item.addEventListener("click", (e) => {
     let li = e.target.closest("li");
@@ -484,8 +482,8 @@ dropdownlists.forEach((item) => {
 });
 
 /*=====================
-  Set Full Names
------------------------*/
+    Set Full Names
+  -----------------------*/
 const setfullname = () => {
   let x;
   if (lastname.value !== "") {
@@ -496,10 +494,11 @@ const setfullname = () => {
   return x;
 };
 
+
 /*=====================
-  Image File Input
------------------------*/
-const compressimage = (nput, preview) => {
+    Image File Input
+  -----------------------*/
+const imageResize = (nput) => {
   let file = nput.files[0];
   if (file) {
     let reader = new FileReader();
@@ -515,42 +514,48 @@ const compressimage = (nput, preview) => {
 
       img.onload = function (el) {
         let x = document.createElement("canvas");
-        let oW = el.target.width;
-        let oH = el.target.height;	
-        x.width = (150/oH) * oW;
-        x.height = 150;
-        let cx = x.getContext("2d");	    
+        //let e_w = el.target.width;
+        //let e_h = el.target.height;
+        let cx = x.getContext("2d");
         cx.drawImage(el.target, 0, 0, x.width, x.height);
 
         let srcEncoded = cx.canvas.toDataURL("image/png", 1);
         nput.dataset.url = srcEncoded;
-        document.getElementById(preview).src = nput.dataset.url;
+
+        document.getElementById().src = nput.dataset.url;
       };
     };
   }
 };
-compressimage(file_1, "image_1");
-compressimage(file_2, "image_2");
-compressimage(file_3, "image_3");
-compressimage(file_4, "image_4");
-compressimage(file_5, "image_5");
-compressimage(file_6, "image_6");
-compressimage(file_7, "image_7");
+
+/*
+imageResize(file_1, "image_1");
+imageResize(file_2, "image_2");
+imageResize(file_3, "image_3");
+imageResize(file_4, "image_4");
+imageResize(file_5, "image_5");
+imageResize(file_6, "image_6");
+imageResize(file_7, "image_7");
+*/
 
 /*//let imagefiles = document.querySelectorAll(".imgfile");
-let fileinputs = document.querySelectorAll(".lb input[type=file]");
-fileinputs.forEach((input) => {
-  input.addEventListener("click", (e) => {
-   let x = e.target.files[0];
-     if (x) { 
-	alert(fileinputs.length);
-     }
-  });  
-});
-*/
+  let fileinputs = document.querySelectorAll(".lb input[type=file]");
+  fileinputs.forEach((input) => {
+    input.addEventListener("click", (e) => {
+     let x = e.target.files[0];
+       if (x) { 
+      alert(fileinputs.length);
+       }
+    });  
+  });
+  */
+
+
+
+
 /*=====================
-  Fetch Form Data
------------------------*/
+    Fetch Form Data
+  -----------------------*/
 function newuserdata(cid) {
   let xfullname = setfullname().toLowerCase();
   const newdata = {
@@ -570,7 +575,7 @@ function newuserdata(cid) {
       currtown.value,
       subcounty.value,
       sublocation.value,
-      physicaladdrss.value,
+      physical_address.value,
     ],
     workstatus: [
       w_status.value,
@@ -595,8 +600,8 @@ function newuserdata(cid) {
 }
 
 /*============================
-   Work Status Changed
-------------------------------*/
+     Work Status Changed
+  ------------------------------*/
 let w1 = document.querySelector(".pod.pd1");
 let w2 = document.querySelector(".pod.pd2");
 let w3 = document.querySelector(".pod.pd3");
@@ -630,8 +635,8 @@ email.addEventListener("blur", () => {
 });
 
 /*============================
-   Current Form Input Changes
-------------------------------*/
+     Current Form Input Changes
+  ------------------------------*/
 all_inputs.forEach((nput) => {
   nput.addEventListener("input", (e) => {
     newuserdata("");
@@ -650,8 +655,8 @@ all_inputs.forEach((nput) => {
 });
 
 /*========================
-   Create New Client ID
--------------------------*/
+     Create New Client ID
+  -------------------------*/
 const createnew_id = () => {
   let arry = [];
   let ref = db.collection("cc_userdata");
@@ -678,19 +683,19 @@ const createnew_id = () => {
 };
 
 /*======================
-  Form Tabs Navigation
-------------------------*/
+    Form Tabs Navigation
+  ------------------------*/
 
 /*let steps = current_form.querySelectorAll(".steps p");
-
-const stepIndicator = (index) => {
-  for (let i = 0; i < steps.length; i++) {
-    steps[i].classList.remove("current");
-    if (i == index) {
-      steps[i].classList.add("current");
+  
+  const stepIndicator = (index) => {
+    for (let i = 0; i < steps.length; i++) {
+      steps[i].classList.remove("current");
+      if (i == index) {
+        steps[i].classList.add("current");
+      }
     }
-  }
-};*/
+  };*/
 
 let tabs = current_form.querySelectorAll(".inputs .tab");
 
@@ -729,9 +734,9 @@ const netxt_tab = (step) => {
   if (current_tab == 0) {
     tab.innerText = "PROFILE";
   } else if (current_tab == 1) {
-    tab.innerText = "IDENTITY ;
+    tab.innerText = "IDENTITY";
   } else if (current_tab == 2) {
-    tab.innerText = "CONTACTS;
+    tab.innerText = "CONTACTS";
   } else if (current_tab == 3) {
     tab.innerText = "ADRESS";
   } else if (current_tab == 4) {
@@ -742,11 +747,11 @@ const netxt_tab = (step) => {
     tab.innerText = "Terms & Conditions";
   }
 };
-netxt_tab(0);
+netxt_tab();
 
 /*=====================
-  Validate Empty Inputs
------------------------*/
+    Validate Empty Inputs
+  -----------------------*/
 
 function validateEmpties(btn) {
   let valid = true;
@@ -760,7 +765,7 @@ function validateEmpties(btn) {
       dobirth.classList.remove("invalid");
     }
   });
-	
+
   if (file_1.files.length == 0) {
     file_1.classList.add("invalid");
     valid = false;
@@ -786,13 +791,9 @@ function validateEmpties(btn) {
   }
 }
 
-/*   */
-
-
-/*
 /*=====================
-  Submit and Save Client
------------------------*/
+    Submit and Save Client
+  -----------------------*/
 function submitnewClient() {
   let data = JSON.parse(sessionStorage.getItem("cc_newuser"));
   db.collection("cc_userdata")
@@ -804,25 +805,6 @@ function submitnewClient() {
       document.getElementById("userform").reset();
     });
 }
-
-
-/*let forms = document.querySelectorAll(".forms form");
-function open_forms(fm) {
-  for (let i = 0; i < forms.length; i++) {
-    forms[i].classList.remove("shown");
-    if (forms[i].id == fm) {
-      current_form = forms[i];
-      current_form.classList.add("shown");
-      current_form.reset();
-      netxt_tab(1);
-    } else {
-      forms[i].classList.remove("shown");
-    }
-  }
-}
-open_forms("userform");
-*/
-
 
 function toCurrency(value) {
   // ---------- Currency function
@@ -848,27 +830,3 @@ function addDays(date, days) {
   newDate.setDate(date.getDate() + days);
   return newDate;
 }
-/*let main_width = document.querySelector(".main");
-//alert(main_width);
-if (main_width.clientWidth < 800) {
-  main_width.classList.add("full");
-}
-*/
-
-
-/*
-
-function getPadding() {
-  let x = document.querySelector(".forms");
-  let z = document.querySelector(".md");
-  let x1 = x.clientHeight;
-  let z1 = z.clientHeight;
-  let y = z1 - x1 - 100;
-
-  document.querySelector("#titlename").innerText = y;
-  document.querySelector(".forms form").style.paddingBottom = y+"px";
-}
-
-getPadding(); 
-  
-*/
